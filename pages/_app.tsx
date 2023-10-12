@@ -16,8 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
       <Head>
         <title>Adi Amar</title>
       </Head>
-      <Script src="/theme.js" strategy="beforeInteractive" />
-      <ThemeProvider attribute="class" enableColorScheme={false}>
+      <ThemeProvider enableColorScheme={false}>
         <Component {...pageProps} />
       </ThemeProvider>
     </>
