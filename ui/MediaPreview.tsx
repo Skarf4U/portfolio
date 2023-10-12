@@ -3,7 +3,6 @@ import cx from "clsx"
 import Image from "next/image"
 import Link from "next/link"
 import React from "react"
-import { PlayIcon } from "@heroicons/react/solid"
 
 export const MediaPreview = ({
   title,
@@ -31,7 +30,7 @@ export const MediaPreview = ({
                 </div>
               ) : null}
 
-              <Image src={image} width={width} height={height} />
+              <Image src={image} width={width} height={height} alt={""} />
             </div>
           ) : null}
           <h2 className="text-lg font-bold group-hover:text-sky-500">

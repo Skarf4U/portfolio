@@ -2,7 +2,6 @@ import { FOCUS_VISIBLE_OUTLINE, LIGHT_COLORS } from "@/lib/constants"
 import { shuffleArray } from "@/lib/shuffleArray"
 import { Button } from "@/ui/Button"
 import { RainbowHighlight } from "@/ui/RainbowHighlight"
-import { PlayIcon } from "@heroicons/react/solid"
 import cx from "clsx"
 import React from "react"
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation"
@@ -26,7 +25,6 @@ export const HeroDemo = () => {
               FOCUS_VISIBLE_OUTLINE,
             )}
           >
-            <PlayIcon className="w-20" />
           </button>
         </div>
       ) : null}
