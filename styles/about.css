@@ -560,3 +560,7 @@ h1 span {
   animation: intro_width__3hQft var(--a-duration) var(--a-easing) forwards;
   animation-delay: calc(var(--a-delay) + 0.3s);
 }
+
+.intro_title__TZuNV::selection, .intro_title__TZuNV span::selection {
+  -webkit-text-fill-color: var(--geist-foreground);
+}
