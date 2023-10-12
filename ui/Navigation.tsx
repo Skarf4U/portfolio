@@ -23,18 +23,18 @@ const NavLink: FC<{
   const active = router.pathname.split("/")[1] == url.replace("/", "");
 
   return (
-    <Link href={url}>
-      <a
-        className={`group flex h-8 items-center rounded-md bg-transparent px-3 text-sm font-medium leading-none ${
-          active
-            ? "bg-violet-50 text-violet-900 dark:bg-violet-500/20 dark:text-violet-50"
-            : "text-slate-600 hover:bg-gray-50 hover:text-slate-700 dark:text-slate-300 dark:hover:bg-gray-900 dark:hover:text-slate-200"
-        }`}
-        rel={"noreferrer"}
-      >
-        {label && <span className={hideLabel ? "sr-only" : ""}>{label}</span>}
-      </a>
-    </Link>
+    (<Link
+      href={url}
+      className={`group flex h-8 items-center rounded-md bg-transparent px-3 text-sm font-medium leading-none ${
+        active
+          ? "bg-violet-50 text-violet-900 dark:bg-violet-500/20 dark:text-violet-50"
+          : "text-slate-600 hover:bg-gray-50 hover:text-slate-700 dark:text-slate-300 dark:hover:bg-gray-900 dark:hover:text-slate-200"
+      }`}
+      rel={"noreferrer"}>
+
+      {label && <span className={hideLabel ? "sr-only" : ""}>{label}</span>}
+
+    </Link>)
   );
 };
 const IconLink: FC<{
@@ -47,23 +47,23 @@ const IconLink: FC<{
   const active = router.pathname.split("/")[1] == url.replace("/", "");
 
   return (
-    <Link href={url}>
-      <a
-        className={`group flex h-8 items-center rounded-md bg-transparent px-3 text-sm font-medium leading-none ${
-          active
-            ? "bg-violet-50 text-violet-900 dark:bg-violet-500/20 dark:text-violet-50"
-            : "text-slate-600 hover:bg-gray-50 hover:text-slate-700 dark:text-slate-300 dark:hover:bg-gray-900 dark:hover:text-slate-200"
-        }`}
-        target={"_blank"}
-        rel={"noreferrer"}
-      >
-        {icon && (
-          <span className="block w-5 text-slate-400 group-hover:text-slate-500 dark:text-slate-500 dark:group-hover:text-slate-400">
-            <Icon name={icon} />
-          </span>
-        )}
-      </a>
-    </Link>
+    (<Link
+      href={url}
+      className={`group flex h-8 items-center rounded-md bg-transparent px-3 text-sm font-medium leading-none ${
+        active
+          ? "bg-violet-50 text-violet-900 dark:bg-violet-500/20 dark:text-violet-50"
+          : "text-slate-600 hover:bg-gray-50 hover:text-slate-700 dark:text-slate-300 dark:hover:bg-gray-900 dark:hover:text-slate-200"
+      }`}
+      target={"_blank"}
+      rel={"noreferrer"}>
+
+      {icon && (
+        <span className="block w-5 text-slate-400 group-hover:text-slate-500 dark:text-slate-500 dark:group-hover:text-slate-400">
+          <Icon name={icon} />
+        </span>
+      )}
+
+    </Link>)
   );
 };
 
@@ -74,10 +74,12 @@ export const Navigation = () => {
     <header className="top-0 fixed z-50 w-full border-b border-gray-200 bg-white bg-opacity-90 backdrop-blur backdrop-filter dark:border-gray-800 dark:bg-gray-950">
       <div className="mx-auto flex h-16 w-full max-w-screen-2xl items-center justify-between px-4 md:px-8 lg:px-16">
         <div className="flex items-center space-x-2.5">
-          <Link href="/">
-            <a className="flex items-center space-x-2.5 font-bold text-slate-800 no-underline dark:text-white">
-              <span className="-mt-0.5">Adi Amar</span>
-            </a>
+          <Link
+            href="/"
+            className="flex items-center space-x-2.5 font-bold text-slate-800 no-underline dark:text-white">
+
+            <span className="-mt-0.5">Adi Amar</span>
+
           </Link>
         </div>
         <div className="lg:hidden">

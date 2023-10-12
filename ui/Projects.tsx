@@ -19,52 +19,54 @@ const Project = ({ project }: { project: Project }) => {
   let { hoverProps, isHovered } = useHover({});
 
   return (
-    <Link href={project.url ? project.url : "/"}>
-      <a className={cx("block", FOCUS_VISIBLE_OUTLINE)}>
-        <div {...hoverProps}>
-          {project.image ? (
-            <Tilt
-              transitionSpeed={10000}
-              tiltMaxAngleY={8}
-              tiltMaxAngleX={8}
-              scale={1.01}
-              glareEnable={true}
-              glareMaxOpacity={0.3}
-              glareBorderRadius="11px"
-            >
-              <div style={{ fontSize: 0 }}>
-                <Image
-                  src={project.image}
-                  alt="Project Preview"
-                  width={500}
-                  height={300}
-                  priority={true}
-                />
-              </div>
-            </Tilt>
-          ) : null}
-          <p className="mt-6 text-xl font-bold text-gray-800">{project.name}</p>
-          <p className="mt-2 text-gray-800 line-clamp-2">
-            {project.description}
-          </p>
-          {project.url ? (
-            <div className="mt-3">
-              <RoughNotation
-                type="underline"
-                show={isHovered}
-                strokeWidth={2}
-                iterations={2}
-                padding={2}
-                animationDuration={600}
-                color="#7DD3FC"
-              >
-                <span className="font-medium text-gray-800">View Project</span>
-              </RoughNotation>
+    (<Link
+      href={project.url ? project.url : "/"}
+      className={cx("block", FOCUS_VISIBLE_OUTLINE)}>
+
+      <div {...hoverProps}>
+        {project.image ? (
+          <Tilt
+            transitionSpeed={10000}
+            tiltMaxAngleY={8}
+            tiltMaxAngleX={8}
+            scale={1.01}
+            glareEnable={true}
+            glareMaxOpacity={0.3}
+            glareBorderRadius="11px"
+          >
+            <div style={{ fontSize: 0 }}>
+              <Image
+                src={project.image}
+                alt="Project Preview"
+                width={500}
+                height={300}
+                priority={true}
+              />
             </div>
-          ) : null}
-        </div>
-      </a>
-    </Link>
+          </Tilt>
+        ) : null}
+        <p className="mt-6 text-xl font-bold text-gray-800">{project.name}</p>
+        <p className="mt-2 text-gray-800 line-clamp-2">
+          {project.description}
+        </p>
+        {project.url ? (
+          <div className="mt-3">
+            <RoughNotation
+              type="underline"
+              show={isHovered}
+              strokeWidth={2}
+              iterations={2}
+              padding={2}
+              animationDuration={600}
+              color="#7DD3FC"
+            >
+              <span className="font-medium text-gray-800">View Project</span>
+            </RoughNotation>
+          </div>
+        ) : null}
+      </div>
+
+    </Link>)
   );
 };
 

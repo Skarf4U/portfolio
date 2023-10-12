@@ -21,24 +21,26 @@ export const MediaPreview = ({
 
   return (
     <div>
-      <Link href={url}>
-        <a className={cx("text-gray-800 group block", FOCUS_VISIBLE_OUTLINE)}>
-          {image ? (
-            <div className="relative mb-4 overflow-hidden rounded-lg text-[0px]">
-              {type === "youtube" ? (
-                <div className="absolute inset-0 z-10 flex items-center justify-center transition-colors ">
-                </div>
-              ) : null}
+      <Link
+        href={url}
+        className={cx("text-gray-800 group block", FOCUS_VISIBLE_OUTLINE)}>
 
-              <Image src={image} width={width} height={height} alt={""} />
-            </div>
-          ) : null}
-          <h2 className="text-lg font-bold group-hover:text-sky-500">
-            {title}
-          </h2>
-          <p className="text-gray-800 line-clamp-2">{text}</p>
-        </a>
+        {image ? (
+          <div className="relative mb-4 overflow-hidden rounded-lg text-[0px]">
+            {type === "youtube" ? (
+              <div className="absolute inset-0 z-10 flex items-center justify-center transition-colors ">
+              </div>
+            ) : null}
+
+            <Image src={image} width={width} height={height} alt={""} />
+          </div>
+        ) : null}
+        <h2 className="text-lg font-bold group-hover:text-sky-500">
+          {title}
+        </h2>
+        <p className="text-gray-800 line-clamp-2">{text}</p>
+
       </Link>
     </div>
-  )
+  );
 }

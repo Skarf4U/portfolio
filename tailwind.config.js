@@ -16,7 +16,7 @@ module.exports = {
     // https://tailwindcss.com/docs/just-in-time-mode#known-limitations
     "./safelist.txt",
   ],
-  darkMode: "class",
+  // darkMode: "class",
   theme: {
     extend: {
       fontFamily: {
