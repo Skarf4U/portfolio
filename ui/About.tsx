@@ -8,7 +8,6 @@ import React from "react";
 import { RoughNotation, RoughNotationGroup } from "react-rough-notation";
 import cx from "clsx";
 import { FOCUS_VISIBLE_OUTLINE } from "@/lib/constants";
-import { Button } from "./Button";
 
 export const About = () => {
   // Before animation, detect if custom fonts are loaded, so <RoughNotation />
