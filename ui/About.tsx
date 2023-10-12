@@ -34,7 +34,7 @@ export const About = () => {
         "--stack-justify": "flex-start",
         "--stack-padding": "0px",
         "--stack-gap": "0px",
-      }}
+      } as React.CSSProperties}
     >
       <svg
         fill="none"
@@ -279,7 +279,7 @@ export const About = () => {
               "--stack-justify": "flex-start",
               "--stack-padding": "0px",
               "--stack-gap": "0px",
-            }}
+            } as React.CSSProperties}
           >
             <div
               className="stack_stack__iZkUS stack intro_buttons__hi64e"
@@ -291,7 +291,7 @@ export const About = () => {
                 "--stack-justify": "flex-start",
                 "--stack-padding": "0px",
                 "--stack-gap": "16px",
-              }}
+              } as React.CSSProperties}
             >
               <div
                 aria-hidden="true"
@@ -310,7 +310,7 @@ export const About = () => {
                   "--stack-justify": "flex-start",
                   "--stack-padding": "0px",
                   "--stack-gap": "16px",
-                }}
+                } as React.CSSProperties}
               >
                 <a
                   role="link"
@@ -318,7 +318,7 @@ export const About = () => {
                   className="button_base__BjwbK reset_reset__KRyvc button_button__81573 reset_reset__KRyvc button_large__fuY6E button_invert__YNhnn"
                   data-geist-button=""
                   target="_blank"
-                  style={{ "--geist-icon-size": "16px" }}
+                  style={{ "--geist-icon-size": "16px" } as React.CSSProperties}
                 >
                   <span className="button_content__1aE1_">View LinkedIn</span>
                 </a>
@@ -328,7 +328,7 @@ export const About = () => {
                   className="button_base__BjwbK reset_reset__KRyvc button_button__81573 reset_reset__KRyvc button_secondary__kMMNc button_large__fuY6E button_invert__YNhnn"
                   data-geist-button=""
                   target="_blank"
-                  style={{ "--geist-icon-size": "16px" }}
+                  style={{ "--geist-icon-size": "16px" } as React.CSSProperties}
                 >
                   <span className="button_content__1aE1_">View GitHub</span>
                 </a>

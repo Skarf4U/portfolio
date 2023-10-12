@@ -32,6 +32,14 @@
     background-size: 20px 20px;
   }
 }
+::selection {
+  background-color: var(--geist-selection);
+  color: var(--geist-selection-text-color);
+}
+
+.section-label_text__ReaxV::selection {
+  -webkit-text-fill-color: var(--geist-foreground);
+}
 
 main {
   margin-top: 8rem !important;
