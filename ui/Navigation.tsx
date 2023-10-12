@@ -4,16 +4,40 @@ import { Icon, IconName } from "./Icon";
 import { useRouter } from "next/router";
 
 const navLinks: Array<{ label: string; url: string }> = [
-  { label: "About", url: "#about" },
+  { label: "About", url: "/#about" },
   { label: "Projects", url: "/projects" },
 ];
 
 const iconLinks: Array<{ label: string; icon: IconName; url: string }> = [
   { label: "Github", icon: "github", url: "https://github.com/skarf4u" },
-  { label: "Discord", icon: "discord", url: "https://discord.gg/rytFErsARm" },
+  { label: "LinkedIn", icon: "linkedin", url: "https://linkedin.com/in/adiamar" },
 ];
 
 const NavLink: FC<{
+  label?: string;
+  hideLabel?: boolean;
+  icon?: IconName;
+  url: string;
+}> = ({ label, hideLabel = false, icon, url }) => {
+  const router = useRouter();
+  const active = router.pathname.split("/")[1] == url.replace("/", "");
+
+  return (
+    <Link href={url}>
+      <a
+        className={`group flex h-8 items-center rounded-md bg-transparent px-3 text-sm font-medium leading-none ${
+          active
+            ? "bg-violet-50 text-violet-900 dark:bg-violet-500/20 dark:text-violet-50"
+            : "text-slate-600 hover:bg-gray-50 hover:text-slate-700 dark:text-slate-300 dark:hover:bg-gray-900 dark:hover:text-slate-200"
+        }`}
+        rel={"noreferrer"}
+      >
+        {label && <span className={hideLabel ? "sr-only" : ""}>{label}</span>}
+      </a>
+    </Link>
+  );
+};
+const IconLink: FC<{
   label?: string;
   hideLabel?: boolean;
   icon?: IconName;
@@ -38,7 +62,6 @@ const NavLink: FC<{
             <Icon name={icon} />
           </span>
         )}
-        {label && <span className={hideLabel ? "sr-only" : ""}>{label}</span>}
       </a>
     </Link>
   );
@@ -72,7 +95,7 @@ export const Navigation = () => {
         {open && (
           <div className="fixed inset-0 top-[65px] z-50 h-screen bg-gray-950/10 pb-20 backdrop-blur-lg backdrop-filter dark:bg-gray-950/50">
             <nav className="lg:hidden absolute right-0 h-full divide-y divide-gray-200 border-l border-gray-200 bg-white p-8 dark:divide-gray-800 dark:border-gray-800 dark:bg-gray-950">
-              <div className="flex flex-col items-end space-y-2 pb-8">
+              <div className="flex flex-col space-y-2 pb-8">
                 {navLinks.map(({ label, url }, index) => (
                   <NavLink
                     key={index}
@@ -84,7 +107,7 @@ export const Navigation = () => {
               </div>
               <div className="flex items-center justify-end space-x-4 pt-8">
                 {iconLinks.map(({ label, icon, url }, index) => (
-                  <NavLink
+                  <IconLink
                     key={index}
                     label={label}
                     hideLabel
@@ -109,7 +132,7 @@ export const Navigation = () => {
           </div>
           <div className="flex items-center pl-2 lg:space-x-2 lg:pl-8">
             {iconLinks.map(({ label, icon, url }, index) => (
-              <NavLink
+              <IconLink
                 key={index}
                 label={label}
                 hideLabel

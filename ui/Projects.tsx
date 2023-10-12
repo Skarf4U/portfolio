@@ -94,6 +94,9 @@ export const Projects = ({ projects }: { projects: PostMeta[] }) => {
           )
         })}
       </div>
+      <section className="stack_stack__iZkUS stack customers_root__6St4m">
+        
+      </section>
     </div>
   )
 }

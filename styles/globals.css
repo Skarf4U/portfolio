@@ -33,7 +33,11 @@
   }
 }
 
-
 main {
   margin-top: 8rem !important;
+}
+
+.mx-auto-important {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }

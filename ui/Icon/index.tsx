@@ -44,6 +44,7 @@ import { SunIcon } from './Sun'
 import { TemplateIcon } from './Template'
 import { UsersIcon } from './Users'
 import { WordPressIcon } from './WordPress'
+import { LinkedInIcon } from './LinkedIn'
 
 export type IconName =
   | 'api'
@@ -70,6 +71,7 @@ export type IconName =
   | 'external-link'
   | 'gear'
   | 'github'
+  | 'linkedin'
   | 'gitpod'
   | 'graphql'
   | 'info'
@@ -117,6 +119,7 @@ const iconMap = {
   expand: ExpandIcon,
   gear: GearIcon,
   github: GitHubIcon,
+  linkedin: LinkedInIcon,
   gitpod: GitpodIcon,
   graphql: GraphQLIcon,
   info: InfoIcon,

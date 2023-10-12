@@ -6,7 +6,7 @@ export const Layout = ({ children }: { children: React.ReactNode }) => {
   return (
     <div>
       <Navigation />
-      <main className="max-w-4xl mx-auto mt-16 antialiased">{children}</main>
+      <main className="max-w-max mx-auto mt-16 antialiased">{children}</main>
       <Footer />
     </div>
   )
