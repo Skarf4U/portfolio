@@ -1,15 +1,9 @@
-import { getAllPostsMeta } from "@/lib/mdx";
 import { About } from "@/ui/About";
 import { Layout } from "@/ui/Layout";
 import { MediaPreview } from "@/ui/MediaPreview";
 import { PostPreview } from "@/ui/PostPreview";
 import { InferGetStaticPropsType } from "next";
 import React from "react";
-
-export const getStaticProps = async () => {
-  const posts = getAllPostsMeta("post");
-  return { props: { posts } };
-};
 
 const projects = [
   {
@@ -28,9 +22,7 @@ const projects = [
   },
 ];
 
-export default function Home({
-  posts,
-}: InferGetStaticPropsType<typeof getStaticProps>) {
+export default function Home({}) {
   return (
     <Layout>
       <div className="space-y-14 lg:space-y-24">
@@ -187,43 +179,51 @@ export default function Home({
             <div
               className="stack_stack__iZkUS stack showcase-preview_gridDesktop__y7Cwi"
               data-version="v1"
-              style={{
-                "--stack-flex": "initial",
-                "--stack-direction": "row",
-                "--stack-align": "stretch",
-                "--stack-justify": "flex-start",
-                "--stack-padding": "0px",
-                "--stack-gap": "32px",
-              } as React.CSSProperties}
+              style={
+                {
+                  "--stack-flex": "initial",
+                  "--stack-direction": "row",
+                  "--stack-align": "stretch",
+                  "--stack-justify": "flex-start",
+                  "--stack-padding": "0px",
+                  "--stack-gap": "32px",
+                } as React.CSSProperties
+              }
             >
               <div
                 className="stack_stack__iZkUS stack showcase-preview_gridDesktop__y7Cwi"
                 data-version="v1"
-                style={{
-                  flex: "initial",
-                  flexDirection: "row",
-                  alignItems: "stretch",
-                  justifyContent: "flex-start",
-                  padding: "0px",
-                  gap: "32px",
-                } as React.CSSProperties}
-              >
-                <div
-                  className="stack_stack__iZkUS stack"
-                  data-version="v1"
-                  style={{
+                style={
+                  {
                     flex: "initial",
-                    flexDirection: "column",
+                    flexDirection: "row",
                     alignItems: "stretch",
                     justifyContent: "flex-start",
                     padding: "0px",
                     gap: "32px",
-                  } as React.CSSProperties}
+                  } as React.CSSProperties
+                }
+              >
+                <div
+                  className="stack_stack__iZkUS stack"
+                  data-version="v1"
+                  style={
+                    {
+                      flex: "initial",
+                      flexDirection: "column",
+                      alignItems: "stretch",
+                      justifyContent: "flex-start",
+                      padding: "0px",
+                      gap: "32px",
+                    } as React.CSSProperties
+                  }
                 >
                   <a
                     className="showcase-preview_preview__HcSHu"
                     href="/showcase"
-                    style={{ width: "388px", height: "316px" } as React.CSSProperties}
+                    style={
+                      { width: "388px", height: "316px" } as React.CSSProperties
+                    }
                   >
                     <img
                       alt="Screenshot of Audible's website"
@@ -251,11 +251,13 @@ export default function Home({
                         strokeWidth={2}
                         viewBox="0 0 24 24"
                         width={24}
-                        style={{
-                          color: "rgb(177, 177, 177)",
-                          width: "14px",
-                          height: "14px",
-                        } as React.CSSProperties}
+                        style={
+                          {
+                            color: "rgb(177, 177, 177)",
+                            width: "14px",
+                            height: "14px",
+                          } as React.CSSProperties
+                        }
                       >
                         <path d="M7 17L17 7" />
                         <path d="M7 7h10v10" />
@@ -265,7 +267,9 @@ export default function Home({
                   <a
                     className="showcase-preview_preview__HcSHu"
                     href="/showcase"
-                    style={{ width: "388px", height: "210px" } as React.CSSProperties}
+                    style={
+                      { width: "388px", height: "210px" } as React.CSSProperties
+                    }
                   >
                     <img
                       alt="Screenshot of Sonos's website"
@@ -293,11 +297,13 @@ export default function Home({
                         strokeWidth={2}
                         viewBox="0 0 24 24"
                         width={24}
-                        style={{
-                          color: "rgb(177, 177, 177)",
-                          width: "14px",
-                          height: "14px",
-                        } as React.CSSProperties}
+                        style={
+                          {
+                            color: "rgb(177, 177, 177)",
+                            width: "14px",
+                            height: "14px",
+                          } as React.CSSProperties
+                        }
                       >
                         <path d="M7 17L17 7" />
                         <path d="M7 7h10v10" />
@@ -309,19 +315,23 @@ export default function Home({
               <div
                 className="stack_stack__iZkUS stack"
                 data-version="v1"
-                style={{
-                  "--stack-flex": 1,
-                  "--stack-direction": "column",
-                  "--stack-align": "stretch",
-                  "--stack-justify": "flex-start",
-                  "--stack-padding": "0px",
-                  "--stack-gap": "0px",
-                } as React.CSSProperties}
+                style={
+                  {
+                    "--stack-flex": 1,
+                    "--stack-direction": "column",
+                    "--stack-align": "stretch",
+                    "--stack-justify": "flex-start",
+                    "--stack-padding": "0px",
+                    "--stack-gap": "0px",
+                  } as React.CSSProperties
+                }
               >
                 <a
                   className="showcase-preview_preview__HcSHu"
                   href="/showcase"
-                  style={{ width: "302px", height: "538px" } as React.CSSProperties}
+                  style={
+                    { width: "302px", height: "538px" } as React.CSSProperties
+                  }
                 >
                   <img
                     alt="Screenshot of Twitch's website"
@@ -349,11 +359,13 @@ export default function Home({
                       strokeWidth="2"
                       viewBox="0 0 24 24"
                       width="24"
-                      style={{
-                        color: "rgb(177, 177, 177)",
-                        width: "14px",
-                        height: "14px",
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          color: "rgb(177, 177, 177)",
+                          width: "14px",
+                          height: "14px",
+                        } as React.CSSProperties
+                      }
                     >
                       <path d="M7 17L17 7" />
                       <path d="M7 7h10v10" />
@@ -364,19 +376,23 @@ export default function Home({
               <div
                 className="stack_stack__iZkUS stack"
                 data-version="v1"
-                style={{
-                  "--stack-flex": "initial",
-                  "--stack-direction": "column",
-                  "--stack-align": "stretch",
-                  "--stack-justify": "flex-start",
-                  "--stack-padding": "0px",
-                  "--stack-gap": "32px",
-                } as React.CSSProperties}
+                style={
+                  {
+                    "--stack-flex": "initial",
+                    "--stack-direction": "column",
+                    "--stack-align": "stretch",
+                    "--stack-justify": "flex-start",
+                    "--stack-padding": "0px",
+                    "--stack-gap": "32px",
+                  } as React.CSSProperties
+                }
               >
                 <a
                   className="showcase-preview_preview__HcSHu"
                   href="/showcase"
-                  style={{ width: "390px", height: "312px" } as React.CSSProperties}
+                  style={
+                    { width: "390px", height: "312px" } as React.CSSProperties
+                  }
                 >
                   <img
                     alt="Screenshot of Notion's website"
@@ -404,11 +420,13 @@ export default function Home({
                       stroke-width="2"
                       viewBox="0 0 24 24"
                       width="24"
-                      style={{
-                        color: "rgb(177, 177, 177)",
-                        width: "14px",
-                        height: "14px",
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          color: "rgb(177, 177, 177)",
+                          width: "14px",
+                          height: "14px",
+                        } as React.CSSProperties
+                      }
                     >
                       <path d="M7 17L17 7" />
                       <path d="M7 7h10v10" />
@@ -418,19 +436,23 @@ export default function Home({
                 <div
                   className="stack_stack__iZkUS stack"
                   data-version="v1"
-                  style={{
-                    "--stack-flex": "initial",
-                    "--stack-direction": "row",
-                    "--stack-align": "stretch",
-                    "--stack-justify": "flex-start",
-                    "--stack-padding": "0px",
-                    "--stack-gap": "32px",
-                  } as React.CSSProperties}
+                  style={
+                    {
+                      "--stack-flex": "initial",
+                      "--stack-direction": "row",
+                      "--stack-align": "stretch",
+                      "--stack-justify": "flex-start",
+                      "--stack-padding": "0px",
+                      "--stack-gap": "32px",
+                    } as React.CSSProperties
+                  }
                 >
                   <a
                     className="showcase-preview_preview__HcSHu"
                     href="/showcase"
-                    style={{ width: "179px", height: "125px" } as React.CSSProperties}
+                    style={
+                      { width: "179px", height: "125px" } as React.CSSProperties
+                    }
                   >
                     <img
                       alt="Screenshot of Today's website"
@@ -458,11 +480,13 @@ export default function Home({
                         stroke-width="2"
                         viewBox="0 0 24 24"
                         width="24"
-                        style={{
-                          color: "rgb(177, 177, 177)",
-                          width: "14px",
-                          height: "14px",
-                        } as React.CSSProperties}
+                        style={
+                          {
+                            color: "rgb(177, 177, 177)",
+                            width: "14px",
+                            height: "14px",
+                          } as React.CSSProperties
+                        }
                       >
                         <path d="M7 17L17 7" />
                         <path d="M7 7h10v10" />
@@ -472,7 +496,9 @@ export default function Home({
                   <a
                     className="showcase-preview_preview__HcSHu"
                     href="/showcase"
-                    style={{ width: "179px", height: "125px" } as React.CSSProperties}
+                    style={
+                      { width: "179px", height: "125px" } as React.CSSProperties
+                    }
                   >
                     <img
                       alt="Screenshot of ProductHunt's website"
@@ -500,11 +526,13 @@ export default function Home({
                         stroke-width="2"
                         viewBox="0 0 24 24"
                         width="24"
-                        style={{
-                          color: "rgb(177, 177, 177)",
-                          width: "14px",
-                          height: "14px",
-                        } as React.CSSProperties}
+                        style={
+                          {
+                            color: "rgb(177, 177, 177)",
+                            width: "14px",
+                            height: "14px",
+                          } as React.CSSProperties
+                        }
                       >
                         <path d="M7 17L17 7" />
                         <path d="M7 7h10v10" />
@@ -516,19 +544,23 @@ export default function Home({
               <div
                 className="stack_stack__iZkUS stack"
                 data-version="v1"
-                style={{
-                  "--stack-flex": "initial",
-                  "--stack-direction": "column",
-                  "--stack-align": "stretch",
-                  "--stack-justify": "flex-start",
-                  "--stack-padding": "0px",
-                  "--stack-gap": "32px",
-                } as React.CSSProperties}
+                style={
+                  {
+                    "--stack-flex": "initial",
+                    "--stack-direction": "column",
+                    "--stack-align": "stretch",
+                    "--stack-justify": "flex-start",
+                    "--stack-padding": "0px",
+                    "--stack-gap": "32px",
+                  } as React.CSSProperties
+                }
               >
                 <a
                   className="showcase-preview_preview__HcSHu"
                   href="/showcase"
-                  style={{ width: "390px", height: "312px" } as React.CSSProperties}
+                  style={
+                    { width: "390px", height: "312px" } as React.CSSProperties
+                  }
                 >
                   <img
                     alt="Screenshot of Nike's website"
@@ -556,11 +588,13 @@ export default function Home({
                       stroke-width="2"
                       viewBox="0 0 24 24"
                       width="24"
-                      style={{
-                        color: "rgb(177, 177, 177)",
-                        width: "14px",
-                        height: "14px",
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          color: "rgb(177, 177, 177)",
+                          width: "14px",
+                          height: "14px",
+                        } as React.CSSProperties
+                      }
                     >
                       <path d="M7 17L17 7" />
                       <path d="M7 7h10v10" />
@@ -570,7 +604,9 @@ export default function Home({
                 <a
                   className="showcase-preview_preview__HcSHu"
                   href="/showcase"
-                  style={{ width: "390px", height: "312px" } as React.CSSProperties}
+                  style={
+                    { width: "390px", height: "312px" } as React.CSSProperties
+                  }
                 >
                   <img
                     alt="Screenshot of Washington Post's website"
@@ -598,11 +634,13 @@ export default function Home({
                       stroke-width="2"
                       viewBox="0 0 24 24"
                       width="24"
-                      style={{
-                        color: "rgb(177, 177, 177)",
-                        width: "14px",
-                        height: "14px",
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          color: "rgb(177, 177, 177)",
+                          width: "14px",
+                          height: "14px",
+                        } as React.CSSProperties
+                      }
                     >
                       <path d="M7 17L17 7" />
                       <path d="M7 7h10v10" />
@@ -639,13 +677,15 @@ export default function Home({
         <section className="skills-section skills-container">
           <div className="tiny-heading_heading__xYu2W">
             <small
-              style={{
-                fontSize: "0.75rem",
-                letterSpacing: "0.2rem",
-                marginTop: "0",
-                paddingLeft: "0.2rem",
-                color: "var(--accents-5)",
-              } as React.CSSProperties}
+              style={
+                {
+                  fontSize: "0.75rem",
+                  letterSpacing: "0.2rem",
+                  marginTop: "0",
+                  paddingLeft: "0.2rem",
+                  color: "var(--accents-5)",
+                } as React.CSSProperties
+              }
               className="jsx-2423190812 text_text__SJB2H text_small__huEsi geist-themed geist-secondary geist-text-no-margin text_noMargin__KfT5Y text_center__PuA5N text_themed__SN6Oj"
             >
               Technical Skills
@@ -654,39 +694,47 @@ export default function Home({
           <div className="skills-wrapper">
             <div className="geist-wrapper" data-version="v1">
               <div
-                style={{
-                  "--flex": 1,
-                  "--justify-content": "flex-start",
-                  "--align-items": "stretch",
-                } as React.CSSProperties}
+                style={
+                  {
+                    "--flex": 1,
+                    "--justify-content": "flex-start",
+                    "--align-items": "stretch",
+                  } as React.CSSProperties
+                }
                 className="jsx-499702677 geist-container"
               >
                 <span
                   className="path-line_line__6Sfx1 path-line_gradient__qbumR"
-                  style={{
-                    height: "100px",
-                    "--start-color": "var(--geist-background)",
-                    "--end-color": "var(--develop-line-end)",
-                  } as React.CSSProperties}
+                  style={
+                    {
+                      height: "100px",
+                      "--start-color": "var(--geist-background)",
+                      "--end-color": "var(--develop-line-end)",
+                    } as React.CSSProperties
+                  }
                 ></span>
                 <div className="section-label_label__dupZ9">
                   <span
                     className="section-label_number__LhpKk"
-                    style={{
-                      "--start-color": "var(--develop-start-gradient)",
-                      "--end-color": "var(--develop-end-gradient)",
-                    } as React.CSSProperties}
+                    style={
+                      {
+                        "--start-color": "var(--develop-start-gradient)",
+                        "--end-color": "var(--develop-end-gradient)",
+                      } as React.CSSProperties
+                    }
                   >
                     1
                   </span>
                   <h3 className="section-label_heading__uoxFW">
                     <span
                       className="section-label_text__ReaxV"
-                      style={{
-                        "--padding": "0.2em",
-                        "--start-color": "var(--develop-start-gradient)",
-                        "--end-color": "var(--develop-end-gradient)",
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          "--padding": "0.2em",
+                          "--start-color": "var(--develop-start-gradient)",
+                          "--end-color": "var(--develop-end-gradient)",
+                        } as React.CSSProperties
+                      }
                     >
                       Front-End
                     </span>
@@ -696,12 +744,14 @@ export default function Home({
                   <span
                     data-br=":R6lalddmamlla:"
                     data-brr="0.6"
-                    style={{
-                      display: "inline-block",
-                      verticalAlign: "top",
-                      textDecoration: "inherit",
-                      textWrap: "balance",
-                    } as React.CSSProperties}
+                    style={
+                      {
+                        display: "inline-block",
+                        verticalAlign: "top",
+                        textDecoration: "inherit",
+                        textWrap: "balance",
+                      } as React.CSSProperties
+                    }
                   >
                     Where UX becomes a work of art
                   </span>
@@ -966,39 +1016,47 @@ export default function Home({
             </div>
             <div className="geist-wrapper" data-version="v1">
               <div
-                style={{
-                  "--flex": 1,
-                  "--justify-content": "flex-start",
-                  "--align-items": "stretch",
-                } as React.CSSProperties}
+                style={
+                  {
+                    "--flex": 1,
+                    "--justify-content": "flex-start",
+                    "--align-items": "stretch",
+                  } as React.CSSProperties
+                }
                 className="jsx-499702677 geist-container"
               >
                 <span
                   className="path-line_line__6Sfx1 path-line_gradient__qbumR"
-                  style={{
-                    height: "100px",
-                    "--start-color": "var(--geist-background)",
-                    "--end-color": "var(--preview-line-end)",
-                  } as React.CSSProperties}
+                  style={
+                    {
+                      height: "100px",
+                      "--start-color": "var(--geist-background)",
+                      "--end-color": "var(--preview-line-end)",
+                    } as React.CSSProperties
+                  }
                 ></span>
                 <div className="section-label_label__dupZ9">
                   <span
                     className="section-label_number__LhpKk"
-                    style={{
-                      "--start-color": "var(--preview-start-gradient)",
-                      "--end-color": "var(--preview-end-gradient)",
-                    } as React.CSSProperties}
+                    style={
+                      {
+                        "--start-color": "var(--preview-start-gradient)",
+                        "--end-color": "var(--preview-end-gradient)",
+                      } as React.CSSProperties
+                    }
                   >
                     2
                   </span>
                   <h3 className="section-label_heading__uoxFW">
                     <span
                       className="section-label_text__ReaxV"
-                      style={{
-                        "--padding": "0.2em",
-                        "--start-color": "var(--preview-start-gradient)",
-                        "--end-color": "var(--preview-end-gradient)",
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          "--padding": "0.2em",
+                          "--start-color": "var(--preview-start-gradient)",
+                          "--end-color": "var(--preview-end-gradient)",
+                        } as React.CSSProperties
+                      }
                     >
                       Back-End
                     </span>
@@ -1008,12 +1066,14 @@ export default function Home({
                   <span
                     data-br=":R6lalddmamlla:"
                     data-brr="0.6"
-                    style={{
-                      display: "inline-block",
-                      verticalAlign: "top",
-                      textDecoration: "inherit",
-                      textWrap: "balance",
-                    } as React.CSSProperties}
+                    style={
+                      {
+                        display: "inline-block",
+                        verticalAlign: "top",
+                        textDecoration: "inherit",
+                        textWrap: "balance",
+                      } as React.CSSProperties
+                    }
                   >
                     The muscle that flexes behind the scenes
                   </span>
@@ -1285,39 +1345,47 @@ export default function Home({
             </div>
             <div className="geist-wrapper" data-version="v1">
               <div
-                style={{
-                  "--flex": 1,
-                  "--justify-content": "flex-start",
-                  "--align-items": "stretch",
-                } as React.CSSProperties}
+                style={
+                  {
+                    "--flex": 1,
+                    "--justify-content": "flex-start",
+                    "--align-items": "stretch",
+                  } as React.CSSProperties
+                }
                 className="jsx-499702677 geist-container"
               >
                 <span
                   className="path-line_line__6Sfx1 path-line_gradient__qbumR"
-                  style={{
-                    height: "100px",
-                    "--start-color": "var(--geist-background)",
-                    "--end-color": "var(--ship-line-end)",
-                  } as React.CSSProperties}
+                  style={
+                    {
+                      height: "100px",
+                      "--start-color": "var(--geist-background)",
+                      "--end-color": "var(--ship-line-end)",
+                    } as React.CSSProperties
+                  }
                 ></span>
                 <div className="section-label_label__dupZ9">
                   <span
                     className="section-label_number__LhpKk"
-                    style={{
-                      "--start-color": "var(--ship-start-gradient)",
-                      "--end-color": "var(--ship-end-gradient)",
-                    } as React.CSSProperties}
+                    style={
+                      {
+                        "--start-color": "var(--ship-start-gradient)",
+                        "--end-color": "var(--ship-end-gradient)",
+                      } as React.CSSProperties
+                    }
                   >
                     3
                   </span>
                   <h3 className="section-label_heading__uoxFW">
                     <span
                       className="section-label_text__ReaxV"
-                      style={{
-                        "--padding": "0.2em",
-                        "--start-color": "var(--ship-start-gradient)",
-                        "--end-color": "var(--ship-end-gradient)",
-                      } as React.CSSProperties}
+                      style={
+                        {
+                          "--padding": "0.2em",
+                          "--start-color": "var(--ship-start-gradient)",
+                          "--end-color": "var(--ship-end-gradient)",
+                        } as React.CSSProperties
+                      }
                     >
                       Tools & Cloud
                     </span>
@@ -1327,12 +1395,14 @@ export default function Home({
                   <span
                     data-br=":R6lalddmamlla:"
                     data-brr="0.6"
-                    style={{
-                      display: "inline-block",
-                      verticalAlign: "top",
-                      textDecoration: "inherit",
-                      textWrap: "balance",
-                    } as React.CSSProperties}
+                    style={
+                      {
+                        display: "inline-block",
+                        verticalAlign: "top",
+                        textDecoration: "inherit",
+                        textWrap: "balance",
+                      } as React.CSSProperties
+                    }
                   >
                     Turning dreams into reality
                   </span>
