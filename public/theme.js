@@ -1,8 +1,3 @@
 (function initTheme() {
-  var theme = localStorage.getItem("theme") || "light";
-  if (theme === "dark") {
-    document.querySelector("html").classList.add("dark");
-  }
-
-  console.log("theme.js working")
+  document.querySelector("html").classList.add("light");
 })();
