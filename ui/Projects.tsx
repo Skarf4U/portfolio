@@ -1,23 +1,22 @@
-import { FOCUS_VISIBLE_OUTLINE, LIGHT_COLORS } from "@/lib/constants"
-import { Screen } from "@/ui/challenge/Screen"
-import { useHover } from "@react-aria/interactions"
-import cx from "clsx"
-import Image from "next/image"
-import Link from "next/link"
-import React from "react"
-import Tilt from "react-parallax-tilt"
-import { RoughNotation } from "react-rough-notation"
-import { PostMeta } from "types/post"
+import { FOCUS_VISIBLE_OUTLINE, LIGHT_COLORS } from "@/lib/constants";
+import { useHover } from "@react-aria/interactions";
+import cx from "clsx";
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+import Tilt from "react-parallax-tilt";
+import { RoughNotation } from "react-rough-notation";
+import { PostMeta } from "types/post";
 
 type Project = {
-  name: string
-  description: string
-  image?: string
-  url?: string
-}
+  name: string;
+  description: string;
+  image?: string;
+  url?: string;
+};
 
 const Project = ({ project }: { project: Project }) => {
-  let { hoverProps, isHovered } = useHover({})
+  let { hoverProps, isHovered } = useHover({});
 
   return (
     <Link href={project.url ? project.url : "/"}>
@@ -33,17 +32,15 @@ const Project = ({ project }: { project: Project }) => {
               glareMaxOpacity={0.3}
               glareBorderRadius="11px"
             >
-              <Screen>
-                <div style={{ fontSize: 0 }}>
-                  <Image
-                    src={project.image}
-                    alt="Project Preview"
-                    width={500}
-                    height={300}
-                    priority={true}
-                  />
-                </div>
-              </Screen>
+              <div style={{ fontSize: 0 }}>
+                <Image
+                  src={project.image}
+                  alt="Project Preview"
+                  width={500}
+                  height={300}
+                  priority={true}
+                />
+              </div>
             </Tilt>
           ) : null}
           <p className="mt-6 text-xl font-bold text-gray-800">{project.name}</p>
@@ -68,8 +65,8 @@ const Project = ({ project }: { project: Project }) => {
         </div>
       </a>
     </Link>
-  )
-}
+  );
+};
 
 export const Projects = ({ projects }: { projects: PostMeta[] }) => {
   return (
@@ -91,12 +88,10 @@ export const Projects = ({ projects }: { projects: PostMeta[] }) => {
                 }}
               />
             </div>
-          )
+          );
         })}
       </div>
-      <section className="stack_stack__iZkUS stack customers_root__6St4m">
-        
-      </section>
+      <section className="stack_stack__iZkUS stack customers_root__6St4m"></section>
     </div>
-  )
-}
+  );
+};
