@@ -196,12 +196,6 @@ small.jsx-2423190812 {
   margin-bottom: var(--geist-space-16x);
 }
 
-.link_link__hbWKh {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  outline: none;
-}
 .frameworks_frameworks__WYJbT > * {
   margin: var(--geist-gap-half) calc(1.5 * var(--geist-gap-half));
 }

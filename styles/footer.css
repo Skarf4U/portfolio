@@ -117,12 +117,6 @@
   padding: 6px 0;
 }
 
-.link_link__hbWKh {
-  text-decoration: none;
-  color: inherit;
-  cursor: pointer;
-  outline: none;
-}
 .link_secondary__F1rqx {
   color: var(--accents-5);
   transition: color 0.1s ease;

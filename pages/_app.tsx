@@ -6,6 +6,7 @@ import Script from "next/script";
 import "../styles/globals.css";
 import "../styles/projects.css";
 import "../styles/about.css";
+import "../styles/contact.css";
 import "../styles/skills.css";
 import "../styles/footer.css";
 

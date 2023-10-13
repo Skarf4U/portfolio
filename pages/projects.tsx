@@ -569,7 +569,7 @@ const projects = (props: Props) => {
                   >
                     <span className="gradient-heading_wrapper__PlNTr">
                       <h2 className="gradient-heading_heading__aFoWg">
-                        Build like the Best
+                      Get your own site now
                       </h2>
                     </span>
                     <p className="templates_deploySubtext__pIEAp">
@@ -585,8 +585,7 @@ const projects = (props: Props) => {
                           } as React.CSSProperties
                         }
                       >
-                        Jumpstart your Next.js development process with our
-                        pre-built solutions
+                        Simply fill out the contact form and I will get back to you ASAP!
                       </span>
                     </p>
                   </div>
@@ -601,7 +600,7 @@ const projects = (props: Props) => {
                     }
                   >
                     <span className="button_content__1aE1_">
-                      Get your own site now
+                      Contact me
                     </span>
                     <span className="button_suffix__ucg7R">
                       <svg

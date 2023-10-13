@@ -256,7 +256,7 @@ export const About = () => {
                 type="circle"
                 multiline={true}
                 animationDuration={1500}
-                animationDelay={1700}
+
                 strokeWidth={2}
                 iterations={3}
                 padding={5}
