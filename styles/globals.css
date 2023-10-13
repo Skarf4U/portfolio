@@ -56,3 +56,7 @@ main {
   margin-left: auto !important;
   margin-right: auto !important;
 }
+
+.__variable_e66fe9:root {
+  --font-sans: "__Inter_e66fe9", "__Inter_Fallback_e66fe9";
+}

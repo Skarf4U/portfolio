@@ -1,32 +1,3 @@
-.stack_stack__iZkUS {
-  display: flex;
-  flex-direction: var(--stack-direction, column);
-  align-items: var(--stack-align, stretch);
-  justify-content: var(--stack-justify, flex-start);
-  flex: var(--stack-flex, initial);
-  gap: var(--stack-gap, 0);
-}
-@media screen and (min-width: 961px) {
-  .stack_stack__iZkUS {
-    --stack-direction: var(
-      --lg-stack-direction,
-      var(--md-stack-direction, var(--sm-stack-direction))
-    );
-    --stack-align: var(
-      --lg-stack-align,
-      var(--md-stack-align, var(--sm-stack-align))
-    );
-    --stack-justify: var(
-      --lg-stack-justify,
-      var(--md-stack-justify, var(--sm-stack-justify))
-    );
-    --stack-padding: var(
-      --lg-stack-padding,
-      var(--md-stack-padding, var(--sm-stack-padding))
-    );
-    --stack-gap: var(--lg-stack-gap, var(--md-stack-gap, var(--sm-stack-gap)));
-  }
-}
 .contact-sales_contactContainer__huPZU {
   padding: 0 80px 110px;
 }
@@ -162,69 +133,11 @@
   }
 }
 
-.stack_stack__iZkUS {
-  display: flex;
-  flex-direction: var(--stack-direction, column);
-  align-items: var(--stack-align, stretch);
-  justify-content: var(--stack-justify, flex-start);
-  flex: var(--stack-flex, initial);
-  gap: var(--stack-gap, 0);
-}
-@media screen and (min-width: 961px) {
-  .stack_stack__iZkUS {
-    --stack-direction: var(
-      --lg-stack-direction,
-      var(--md-stack-direction, var(--sm-stack-direction))
-    );
-    --stack-align: var(
-      --lg-stack-align,
-      var(--md-stack-align, var(--sm-stack-align))
-    );
-    --stack-justify: var(
-      --lg-stack-justify,
-      var(--md-stack-justify, var(--sm-stack-justify))
-    );
-    --stack-padding: var(
-      --lg-stack-padding,
-      var(--md-stack-padding, var(--sm-stack-padding))
-    );
-    --stack-gap: var(--lg-stack-gap, var(--md-stack-gap, var(--sm-stack-gap)));
-  }
-}
 .contact-sales_contactContainer__huPZU
   .contact-sales_formAndSidebarContainer__YvVZQ {
   width: 100%;
 }
 
-.stack_stack__iZkUS {
-  display: flex;
-  flex-direction: var(--stack-direction, column);
-  align-items: var(--stack-align, stretch);
-  justify-content: var(--stack-justify, flex-start);
-  flex: var(--stack-flex, initial);
-  gap: var(--stack-gap, 0);
-}
-@media screen and (min-width: 961px) {
-  .stack_stack__iZkUS {
-    --stack-direction: var(
-      --lg-stack-direction,
-      var(--md-stack-direction, var(--sm-stack-direction))
-    );
-    --stack-align: var(
-      --lg-stack-align,
-      var(--md-stack-align, var(--sm-stack-align))
-    );
-    --stack-justify: var(
-      --lg-stack-justify,
-      var(--md-stack-justify, var(--sm-stack-justify))
-    );
-    --stack-padding: var(
-      --lg-stack-padding,
-      var(--md-stack-padding, var(--sm-stack-padding))
-    );
-    --stack-gap: var(--lg-stack-gap, var(--md-stack-gap, var(--sm-stack-gap)));
-  }
-}
 .contact-sales_contactContainer__huPZU .contact-sales_formContainer__AzR8V {
   width: 100%;
   max-width: 570px;
@@ -401,7 +314,23 @@
 }
 
 .contact-sales_contactContainer__huPZU .contact-sales_sidebar__8_C2O {
-  padding: 48px 0 0 62px;
+  /* padding: 48px 0 0 62px; */
+  margin: auto 0;
+}
+
+.contact-sales_contactContainer__huPZU
+  .contact-sales_sidebar__8_C2O
+  .contact-sales_quote__xNVW_ {
+  margin: 0;
+  padding: 0 0 var(--geist-gap-double);
+  /* border-bottom: 1px solid var(--accents-2); */
+}
+@media (max-width: 600px) {
+  .contact-sales_contactContainer__huPZU
+    .contact-sales_sidebar__8_C2O
+    .contact-sales_quote__xNVW_ {
+    padding: 0 var(--geist-gap-half);
+  }
 }
 .contact-sales_contactContainer__huPZU
   .contact-sales_formAndSidebarContainer__YvVZQ
@@ -412,13 +341,6 @@
 .contact-sales_quote__xNVW_,
 .contact-sales_testimonials__Kh43G {
   max-width: min(424px, 33vw);
-}
-.contact-sales_contactContainer__huPZU
-  .contact-sales_sidebar__8_C2O
-  .contact-sales_quote__xNVW_ {
-  margin: 0;
-  padding: 0 0 var(--geist-gap-double);
-  border-bottom: 1px solid var(--accents-2);
 }
 
 .text_blockquote__L8WOL {
@@ -436,9 +358,20 @@
   padding: 0 0 10px;
 }
 
+@media (max-width: 900px) {
+  .contact-sales_contactContainer__huPZU {
+    padding: 0 16px 110px;
+  }
+}
 .contact-sales_quote__xNVW_,
 .contact-sales_testimonials__Kh43G {
   max-width: min(424px, 33vw);
+}
+@media (max-width: 960px) {
+  .contact-sales_quote__xNVW_,
+  .contact-sales_testimonials__Kh43G {
+    max-width: 424px;
+  }
 }
 .carousel_logo-carousel__g1_fJ {
   -webkit-user-select: none;

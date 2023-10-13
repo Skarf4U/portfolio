@@ -47,118 +47,222 @@ const contact = (props: Props) => {
         }
       >
         {isSubmitted ? ( // Conditionally render the thank you message
-          <div className="stack_stack__iZkUS stack contact-sales_thankYou__OvJQU" data-version="v1" style={{ 
-            '--stack-flex': 'initial', 
-            '--stack-direction': 'column', 
-            '--stack-align': 'stretch', 
-            '--stack-justify': 'flex-start', 
-            '--stack-padding': '0px', 
-            '--stack-gap': '0px' 
-          } as React.CSSProperties
-            }>
-            <div className="stack_stack__iZkUS stack contact-sales_vercelLogo__ReEQX" data-version="v1" style={{ 
-              '--stack-flex': 'initial', 
-              '--stack-direction': 'column', 
-              '--stack-align': 'center', 
-              '--stack-justify': 'flex-start', 
-              '--stack-padding': '0px', 
-              '--stack-gap': '0px' 
-            } as React.CSSProperties
-            }>
-              <svg aria-hidden="true" fill="none" height="239" viewBox="0 0 257 239" width="257" xmlns="http://www.w3.org/2000/svg">
+          <div
+            className="stack_stack__iZkUS stack contact-sales_thankYou__OvJQU"
+            data-version="v1"
+            style={
+              {
+                "--stack-flex": "initial",
+                "--stack-direction": "column",
+                "--stack-align": "stretch",
+                "--stack-justify": "flex-start",
+                "--stack-padding": "0px",
+                "--stack-gap": "0px",
+              } as React.CSSProperties
+            }
+          >
+            <div
+              className="stack_stack__iZkUS stack contact-sales_vercelLogo__ReEQX"
+              data-version="v1"
+              style={
+                {
+                  "--stack-flex": "initial",
+                  "--stack-direction": "column",
+                  "--stack-align": "center",
+                  "--stack-justify": "flex-start",
+                  "--stack-padding": "0px",
+                  "--stack-gap": "0px",
+                } as React.CSSProperties
+              }
+            >
+              <svg
+                aria-hidden="true"
+                fill="none"
+                height="239"
+                viewBox="0 0 257 239"
+                width="257"
+                xmlns="http://www.w3.org/2000/svg"
+              >
                 <g filter="url(#filter0_d_124_3642)">
-                  <path clip-rule="evenodd" d="M128.416 64.0176L192.424 175.337H64.407L128.416 64.0176Z" fill="white" fill-rule="evenodd"></path>
+                  <path
+                    clip-rule="evenodd"
+                    d="M128.416 64.0176L192.424 175.337H64.407L128.416 64.0176Z"
+                    fill="white"
+                    fill-rule="evenodd"
+                  ></path>
                 </g>
               </svg>
             </div>
-            <h1 className="contact-sales_title__hSxIu" data-testid="contact-page/title">Your message has been sent</h1>
-            <p className="text_wrapper__i87JK" data-version="v1" style={{ 
-              '--text-color': 'var(--ds-gray-900)', 
-              '--text-size': '1.5rem', 
-              '--text-line-height': '1.5rem', 
-              '--text-letter-spacing': '-0.029375rem', 
-              '--text-weight': 400, 
-              '--text-align': 'center' 
-            } as React.CSSProperties
-            }>
+            <h1
+              className="contact-sales_title__hSxIu"
+              data-testid="contact-page/title"
+            >
+              Your message has been sent
+            </h1>
+            <p
+              className="text_wrapper__i87JK"
+              data-version="v1"
+              style={
+                {
+                  "--text-color": "var(--ds-gray-900)",
+                  "--text-size": "1.5rem",
+                  "--text-line-height": "1.5rem",
+                  "--text-letter-spacing": "-0.029375rem",
+                  "--text-weight": 400,
+                  "--text-align": "center",
+                } as React.CSSProperties
+              }
+            >
               Thanks for getting in touch, we will reach out shortly.
             </p>
-            <div className="stack_stack__iZkUS stack" data-version="v1" style={{ 
-              '--stack-flex': 'initial', 
-              '--stack-direction': 'column', 
-              '--stack-align': 'center', 
-              '--stack-justify': 'flex-start', 
-              '--stack-padding': '0px', 
-              '--stack-gap': '0px' 
-            } as React.CSSProperties
-            }>
+            <div
+              className="stack_stack__iZkUS stack"
+              data-version="v1"
+              style={
+                {
+                  "--stack-flex": "initial",
+                  "--stack-direction": "column",
+                  "--stack-align": "center",
+                  "--stack-justify": "flex-start",
+                  "--stack-padding": "0px",
+                  "--stack-gap": "0px",
+                } as React.CSSProperties
+              }
+            >
               <ul className="contact-sales_cardContainer__fD75k">
                 <li className="contact-sales_card__mUZ0c">
-                  <svg className="contact-sales_arrowUpRight__MnkSk" data-testid="geist-icon" fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24" style={{ color: 'currentcolor' } as React.CSSProperties
-            }>
+                  <svg
+                    className="contact-sales_arrowUpRight__MnkSk"
+                    data-testid="geist-icon"
+                    fill="none"
+                    height="24"
+                    shape-rendering="geometricPrecision"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    style={{ color: "currentcolor" } as React.CSSProperties}
+                  >
                     <path d="M7 17L17 7"></path>
                     <path d="M7 7h10v10"></path>
                   </svg>
-                  <h2 className="text_wrapper__i87JK contact-sales_devolverQuote___YWW5" data-version="v1" style={{ 
-                    '--text-color': 'var(--ds-gray-1000)', 
-                    '--text-size': '0.875rem', 
-                    '--text-line-height': '3.5rem', 
-                    '--text-letter-spacing': 'initial', 
-                    '--text-weight': 400 
-                  } as React.CSSProperties
-            }>
-                    <a className="link_link__hbWKh" href="/customers/devolver">
-                      <span className="text_wrapper__i87JK contact-sales_percentage__RmIUV" data-version="v1" style={{ 
-                        '--text-color': 'var(--ds-gray-1000)', 
-                        '--text-size': '0.875rem', 
-                        '--text-line-height': '1.25rem', 
-                        '--text-letter-spacing': 'initial', 
-                        '--text-weight': 400 
+                  <h2
+                    className="text_wrapper__i87JK contact-sales_devolverQuote___YWW5"
+                    data-version="v1"
+                    style={
+                      {
+                        "--text-color": "var(--ds-gray-1000)",
+                        "--text-size": "0.875rem",
+                        "--text-line-height": "3.5rem",
+                        "--text-letter-spacing": "initial",
+                        "--text-weight": 400,
                       } as React.CSSProperties
-            }>
+                    }
+                  >
+                    <a className="link_link__hbWKh" href="/customers/devolver">
+                      <span
+                        className="text_wrapper__i87JK contact-sales_percentage__RmIUV"
+                        data-version="v1"
+                        style={
+                          {
+                            "--text-color": "var(--ds-gray-1000)",
+                            "--text-size": "0.875rem",
+                            "--text-line-height": "1.25rem",
+                            "--text-letter-spacing": "initial",
+                            "--text-weight": 400,
+                          } as React.CSSProperties
+                        }
+                      >
                         73%
                       </span>
                       faster project creation with Vercel
                     </a>
                   </h2>
-                  <img data-version="v1" alt="Logo for Devolver Digital" loading="lazy" width="120" height="54" decoding="async" data-nimg="1" className="image_intrinsic__ulrJk contact-sales_logo__m0gvL" srcSet="https://assets.vercel.com/image/upload/front/home/new/logos/devolver-digital.svg 1x, https://assets.vercel.com/image/upload/front/home/new/logos/devolver-digital.svg 2x" src="https://assets.vercel.com/image/upload/front/home/new/logos/devolver-digital.svg" style={{ color: 'transparent' } as React.CSSProperties
-            } />
+                  <img
+                    data-version="v1"
+                    alt="Logo for Devolver Digital"
+                    loading="lazy"
+                    width="120"
+                    height="54"
+                    decoding="async"
+                    data-nimg="1"
+                    className="image_intrinsic__ulrJk contact-sales_logo__m0gvL"
+                    srcSet="https://assets.vercel.com/image/upload/front/home/new/logos/devolver-digital.svg 1x, https://assets.vercel.com/image/upload/front/home/new/logos/devolver-digital.svg 2x"
+                    src="https://assets.vercel.com/image/upload/front/home/new/logos/devolver-digital.svg"
+                    style={{ color: "transparent" } as React.CSSProperties}
+                  />
                 </li>
                 <li className="contact-sales_card__mUZ0c">
-                  <svg className="contact-sales_arrowUpRight__MnkSk" data-testid="geist-icon" fill="none" height="24" shape-rendering="geometricPrecision" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" width="24" style={{ color: 'currentcolor' } as React.CSSProperties
-            }>
+                  <svg
+                    className="contact-sales_arrowUpRight__MnkSk"
+                    data-testid="geist-icon"
+                    fill="none"
+                    height="24"
+                    shape-rendering="geometricPrecision"
+                    stroke="currentColor"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="1.5"
+                    viewBox="0 0 24 24"
+                    width="24"
+                    style={{ color: "currentcolor" } as React.CSSProperties}
+                  >
                     <path d="M7 17L17 7"></path>
                     <path d="M7 7h10v10"></path>
                   </svg>
-                  <p className="text_wrapper__i87JK contact-sales_improvementTitle__AfXhB" data-version="v1" style={{ 
-                    '--text-color': 'var(--ds-gray-1000)', 
-                    '--text-size': '2rem', 
-                    '--text-line-height': '2.5rem', 
-                    '--text-letter-spacing': '-0.049375rem', 
-                    '--text-weight': 700 
-                  } as React.CSSProperties
-            }>
+                  <p
+                    className="text_wrapper__i87JK contact-sales_improvementTitle__AfXhB"
+                    data-version="v1"
+                    style={
+                      {
+                        "--text-color": "var(--ds-gray-1000)",
+                        "--text-size": "2rem",
+                        "--text-line-height": "2.5rem",
+                        "--text-letter-spacing": "-0.049375rem",
+                        "--text-weight": 700,
+                      } as React.CSSProperties
+                    }
+                  >
                     4 ways to improve your frontend workflow
                   </p>
-                  <p className="text_wrapper__i87JK contact-sales_improvementQuote__40jW2" data-version="v1" style={{ 
-                    '--text-color': 'var(--ds-gray-900)', 
-                    '--text-size': '1rem', 
-                    '--text-line-height': '1.5rem', 
-                    '--text-letter-spacing': 'initial', 
-                    '--text-weight': 400 
-                  } as React.CSSProperties
-            }>
-                    Learn what makes a healthy Web development workflow and how Vercel accelerates that journey at every stage while making the developer experience genuinely great.
+                  <p
+                    className="text_wrapper__i87JK contact-sales_improvementQuote__40jW2"
+                    data-version="v1"
+                    style={
+                      {
+                        "--text-color": "var(--ds-gray-900)",
+                        "--text-size": "1rem",
+                        "--text-line-height": "1.5rem",
+                        "--text-letter-spacing": "initial",
+                        "--text-weight": 400,
+                      } as React.CSSProperties
+                    }
+                  >
+                    Learn what makes a healthy Web development workflow and how
+                    Vercel accelerates that journey at every stage while making
+                    the developer experience genuinely great.
                   </p>
-                  <h2 className="text_wrapper__i87JK" data-version="v1" style={{ 
-                    '--text-color': 'var(--ds-gray-1000)', 
-                    '--text-size': '0.875rem', 
-                    '--text-line-height': '3.5rem', 
-                    '--text-letter-spacing': 'initial', 
-                    '--text-weight': 400 
-                  } as React.CSSProperties
-            }>
-                    <a className="link_link__hbWKh contact-sales_guideLink___9CQI" href="/try/ebook-workflow">Get The Guide</a>
+                  <h2
+                    className="text_wrapper__i87JK"
+                    data-version="v1"
+                    style={
+                      {
+                        "--text-color": "var(--ds-gray-1000)",
+                        "--text-size": "0.875rem",
+                        "--text-line-height": "3.5rem",
+                        "--text-letter-spacing": "initial",
+                        "--text-weight": 400,
+                      } as React.CSSProperties
+                    }
+                  >
+                    <a
+                      className="link_link__hbWKh contact-sales_guideLink___9CQI"
+                      href="/try/ebook-workflow"
+                    >
+                      Get The Guide
+                    </a>
                   </h2>
                 </li>
               </ul>
@@ -397,46 +501,10 @@ const contact = (props: Props) => {
                         } as React.CSSProperties
                       }
                     >
-                      "All of our result pages were developed and deployed on
-                      Vercel, and it was the smoothest election night anyone
-                      could remember.”
+                      "Every great project begins with a simple 'Hello.' Let's
+                      start building something amazing together.”
                     </p>
                   </blockquote>
-                  <figcaption>
-                    <div
-                      className="stack_stack__iZkUS stack"
-                      data-version="v1"
-                      style={
-                        {
-                          "--stack-flex": "initial",
-                          "--stack-direction": "row",
-                          "--stack-align": "center",
-                          "--stack-justify": "flex-start",
-                          "--stack-padding": "0px",
-                          "--stack-gap": "12px",
-                        } as React.CSSProperties
-                      }
-                    >
-                      <div
-                        className="contact-sales_quoteLogo__fziWk"
-                        style={{ maxWidth: "12em" } as React.CSSProperties}
-                      >
-                        <img
-                          data-version="v1"
-                          alt="The Washington Post Logo"
-                          loading="lazy"
-                          width="350"
-                          height="60"
-                          decoding="async"
-                          data-nimg="1"
-                          style={
-                            { color: "transparent" } as React.CSSProperties
-                          }
-                          src="https://assets.vercel.com/image/upload/front/home/new/logos/washingtonpost.svg"
-                        />
-                      </div>
-                    </div>
-                  </figcaption>
                 </figure>
                 <div
                   className="stack_stack__iZkUS stack contact-sales_testimonials__Kh43G"
@@ -465,67 +533,7 @@ const contact = (props: Props) => {
                         "--stack-gap": "0px",
                       } as React.CSSProperties
                     }
-                  >
-                    <div className="tiny-heading_heading__xYu2W tiny-heading_small-margin__r2_Da carousel_heading__cSXOv">
-                      <small
-                        style={
-                          {
-                            fontSize: "0.75rem",
-                            letterSpacing: "0.2rem",
-                            marginTop: 0,
-                            paddingLeft: "0.2rem",
-                            color: "var(--accents-5)",
-                          } as React.CSSProperties
-                        }
-                        className="jsx-2423190812 text_text__SJB2H text_small__huEsi geist-themed geist-secondary geist-text-no-margin text_noMargin__KfT5Y text_center__PuA5N text_themed__SN6Oj"
-                      >
-                        Trusted by the best frontend teams
-                      </small>
-                    </div>
-                    <div
-                      className="carousel_carousel__dGciW"
-                      style={
-                        { opacity: 1, "--copies": 2 } as React.CSSProperties
-                      }
-                    >
-                      <div
-                        className="carousel_track__gsYZO"
-                        style={
-                          {
-                            animationDuration: "80s",
-                            animationPlayState: "running",
-                          } as React.CSSProperties
-                        }
-                      >
-                        <ul
-                          aria-hidden="false"
-                          className="carousel_slides__FS1pI"
-                        >
-                          <div className="carousel_slides__FS1pI carousel_logos__AbzgU">
-                            <div className="carousel_slide__IH4do">
-                              <img
-                                data-version="v1"
-                                alt="Netflix Logo"
-                                loading="eager"
-                                width="113.9"
-                                height="30.6"
-                                decoding="async"
-                                data-nimg="1"
-                                style={
-                                  {
-                                    color: "transparent",
-                                  } as React.CSSProperties
-                                }
-                                srcSet="https://assets.vercel.com/image/upload/front/home/new/logos/netflix.svg 1x, https://assets.vercel.com/image/upload/front/home/new/logos/netflix.svg 2x"
-                                src="https://assets.vercel.com/image/upload/front/home/new/logos/netflix.svg"
-                              />
-                            </div>
-                            {/* Add more carousel_slide__IH4do elements for other logos */}
-                          </div>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
+                  ></div>
                 </div>
               </div>
             </div>
