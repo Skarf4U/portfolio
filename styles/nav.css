@@ -31,7 +31,7 @@
 
 .mobile-menu_wrapper__ehRfR,
 .mobile-menu_wrapper__ehRfR.mobile-menu_hasBanner__9LKXc {
-  top: calc(var(--header-height) + var(--banner-height) - 1px);
+  top: 65px;
 }
 .mobile-menu_wrapper__ehRfR {
   display: block;
