@@ -4,8 +4,8 @@ import { Icon, IconName } from "./Icon";
 import { useRouter } from "next/router";
 
 const navLinks: Array<{ label: string; url: string }> = [
-  { label: "About", url: "/#about" },
   { label: "Projects", url: "/projects" },
+  { label: "Contact", url: "/contact" },
 ];
 
 const iconLinks: Array<{ label: string; icon: IconName; url: string }> = [

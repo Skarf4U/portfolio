@@ -658,18 +658,18 @@ export default function Home({}) {
               </a>
             </strong>
             . <span style={{ display: "block" } as React.CSSProperties}></span>
-            Next.js is trusted by some of the biggest names on the Web.
+            Head over to the projects page to find all of my LIVE web apps!
           </p>
           <a
             role="link"
-            href="/showcase"
+            href="/projects"
             type="submit"
             className="button_base__BjwbK reset_reset__KRyvc button_button__81573 reset_reset__KRyvc button_large__fuY6E button_invert__YNhnn mx-auto-important"
             data-geist-button=""
             data-version="v1"
           >
             <span className="button_content__1aE1_">
-              View the Next.js Showcase
+              View Projects
             </span>
           </a>
         </section>

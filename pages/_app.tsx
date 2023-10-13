@@ -7,6 +7,7 @@ import "../styles/globals.css";
 import "../styles/projects.css";
 import "../styles/about.css";
 import "../styles/skills.css";
+import "../styles/footer.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   useAnalytics();

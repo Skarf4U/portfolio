@@ -41,6 +41,13 @@
   -webkit-text-fill-color: var(--geist-foreground);
 }
 
+span::selection,
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection {
+  -webkit-text-fill-color: var(--geist-foreground);
+}
 main {
   margin-top: 8rem !important;
 }
