@@ -772,6 +772,11 @@ h1.gradient-heading_heading__aFoWg {
   }
 }
 
+@media (max-width: 600px){
+.hero_desktopSubtitle__CaPTi {
+    display: none!important;
+}}
+
 .showcase-sites_showcase__RaIm6 {
   margin: auto;
   display: flex;

@@ -72,8 +72,8 @@ const projects = (props: Props) => {
                   } as React.CSSProperties
                 }
               >
-                Peerless performance, efficiency and developer experience.
-                Next.js is trusted by some of the biggest names of the web.
+                Find all projects on my GitHub.
+                Here you will find all of my live web applications.
               </span>
               <span
                 className="hero_mobileSubtitle__Hth7a"
@@ -89,7 +89,7 @@ const projects = (props: Props) => {
                   } as React.CSSProperties
                 }
               >
-                Peerless performance, efficiency and developer experience
+                Find all projects on my GitHub.
               </span>
             </div>
           </div>
