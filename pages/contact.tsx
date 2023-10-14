@@ -11,7 +11,9 @@ const contact = (props: Props) => {
   async function handleSubmit(e: any) {
     e.preventDefault();
     const data = {
+      name: String(e.target.name.value),
       email: String(e.target.email.value),
+      phone: String(e.target.phone.value),
       note: String(e.target.note.value),
     };
 
@@ -28,7 +30,9 @@ const contact = (props: Props) => {
       setLoading(false);
       setIsSubmitted(true);
 
+      e.target.name.value = "";
       e.target.email.value = "";
+      e.target.phone.value = "";
       e.target.note.value = "";
     }
     if (!response.ok) {
@@ -360,7 +364,55 @@ const contact = (props: Props) => {
                     >
                       <label
                         data-version="v1"
-                        htmlFor="your-email-275"
+                        htmlFor="name"
+                        style={{ width: "100%" } as React.CSSProperties}
+                      >
+                        <div className="label_label__tW6NP label_input__5eDQ5 label_capitalize__mJBX4">
+                          Full Name
+                        </div>
+                        <div
+                          className="input_container__eoK_W"
+                          data-geist-input-wrapper=""
+                          data-version="v1"
+                          style={
+                            {
+                              width: "100%",
+                              "--geist-icon-size": "16px",
+                            } as React.CSSProperties
+                          }
+                        >
+                          <input
+                            id="name"
+                            name="name"
+                            required
+                            autoComplete="name"
+                            className="input_input__1Zknj"
+                            data-geist-input=""
+                            spellCheck="false"
+                            type="name"
+                          />
+                        </div>
+                      </label>
+                    </div>
+                    <div
+                      className="stack_stack__iZkUS stack"
+                      data-version="v1"
+                      style={
+                        {
+                          "--stack-flex": "initial",
+                          "--stack-direction": "column",
+                          "--stack-align": "stretch",
+                          "--stack-justify": "flex-start",
+                          "--stack-padding": "0px",
+                          "--sm-stack-gap": "16px",
+                          "--md-stack-gap": "28px",
+                          "--lg-stack-gap": "28px",
+                        } as React.CSSProperties
+                      }
+                    >
+                      <label
+                        data-version="v1"
+                        htmlFor="email"
                         style={{ width: "100%" } as React.CSSProperties}
                       >
                         <div className="label_label__tW6NP label_input__5eDQ5 label_capitalize__mJBX4">
@@ -378,9 +430,6 @@ const contact = (props: Props) => {
                           }
                         >
                           <input
-                            aria-describedby="your-email-hint"
-                            aria-invalid="false"
-                            data-testid="contact-sales/email"
                             id="email"
                             name="email"
                             required
@@ -389,6 +438,54 @@ const contact = (props: Props) => {
                             data-geist-input=""
                             spellCheck="false"
                             type="email"
+                          />
+                        </div>
+                      </label>
+                    </div>
+                    <div
+                      className="stack_stack__iZkUS stack"
+                      data-version="v1"
+                      style={
+                        {
+                          "--stack-flex": "initial",
+                          "--stack-direction": "column",
+                          "--stack-align": "stretch",
+                          "--stack-justify": "flex-start",
+                          "--stack-padding": "0px",
+                          "--sm-stack-gap": "16px",
+                          "--md-stack-gap": "28px",
+                          "--lg-stack-gap": "28px",
+                        } as React.CSSProperties
+                      }
+                    >
+                      <label
+                        data-version="v1"
+                        htmlFor="phone"
+                        style={{ width: "100%" } as React.CSSProperties}
+                      >
+                        <div className="label_label__tW6NP label_input__5eDQ5 label_capitalize__mJBX4">
+                          Phone number
+                        </div>
+                        <div
+                          className="input_container__eoK_W"
+                          data-geist-input-wrapper=""
+                          data-version="v1"
+                          style={
+                            {
+                              width: "100%",
+                              "--geist-icon-size": "16px",
+                            } as React.CSSProperties
+                          }
+                        >
+                          <input
+                            id="phone"
+                            name="phone"
+                            required
+                            autoComplete="phone"
+                            className="input_input__1Zknj"
+                            data-geist-input=""
+                            spellCheck="false"
+                            type="phone"
                           />
                         </div>
                       </label>

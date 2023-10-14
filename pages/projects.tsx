@@ -167,7 +167,7 @@ const projects = (props: Props) => {
                 className="showcase-sites_siteCard__Sba_V"
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://quizwiai.vercel.app"
+                href="https://quizwizai.vercel.app"
               >
                 <div
                   className="stack_stack__iZkUS stack showcase-sites_siteImageSkeleton__hQrX7"
@@ -275,7 +275,7 @@ const projects = (props: Props) => {
                 className="showcase-sites_siteCard__Sba_V"
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://www.hulu.com"
+                href="https://www.mbgaragedoorsllc.com"
               >
                 <div
                   className="stack_stack__iZkUS stack showcase-sites_siteImageSkeleton__hQrX7"
@@ -300,12 +300,12 @@ const projects = (props: Props) => {
                     data-nimg="1"
                     className="showcase-sites_siteImage__s7ySt"
                     style={{ color: "transparent" } as React.CSSProperties}
-                    srcSet="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhulu.138888a5.png&w=640&q=55&dpl=dpl_HX9pZoJVQmgYX6j9Wr9Z8WSSFRXm 1x, /_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhulu.138888a5.png&w=750&q=55&dpl=dpl_HX9pZoJVQmgYX6j9Wr9Z8WSSFRXm 2x"
-                    src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fhulu.138888a5.png&w=750&q=55&dpl=dpl_HX9pZoJVQmgYX6j9Wr9Z8WSSFRXm"
+                    srcSet="https://i.ibb.co/1bB008T/mbgd.png 1x, https://i.ibb.co/1bB008T/mbgd.png 2x"
+                    src="https://i.ibb.co/1bB008T/mbgd.png"
                   />
                 </div>
                 <span className="showcase-sites_siteName__zyI1J">
-                  <p>Hulu</p>
+                  <p>Myrtle Beach Garage Doors LLC</p>
                   <svg
                     aria-hidden="true"
                     className="showcase-sites_arrow__C830T"
@@ -323,7 +323,7 @@ const projects = (props: Props) => {
                     <path d="M10 7h7v7" />
                   </svg>
                 </span>
-                <p>entertainment</p>
+                <p>Web-App</p>
               </a>
               <a
                 className="showcase-sites_siteCard__Sba_V"

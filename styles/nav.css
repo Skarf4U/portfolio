@@ -99,23 +99,6 @@
 .button_button__81573 {
   display: flex;
 }
-.button_button__81573[data-geist-button] {
-  border-radius: 6px;
-  color: var(--themed-fg, var(--ds-background-100));
-  background: var(--themed-bg, var(--ds-gray-1000)) none;
-  font-weight: 500;
-  padding: 0 var(--geist-gap-half);
-  box-shadow: 0 0 0 1px var(--themed-border, transparent);
-  max-width: 100%;
-  justify-content: center;
-  align-items: center;
-  transition-property: border-color, background, color, transform, box-shadow;
-  transition-duration: 0.15s;
-  transition-timing-function: ease;
-  font-size: var(--geist-form-font);
-  line-height: var(--geist-form-line-height);
-  height: var(--geist-form-height);
-}
 .button_secondary__kMMNc[data-geist-button] {
   --themed-bg: var(--ds-background-100);
   --themed-fg: var(--ds-gray-1000);
@@ -147,4 +130,8 @@
   color: inherit;
   cursor: pointer;
   outline: none;
+}
+
+.hover-no-color:hover {
+  color: initial !important;
 }

@@ -220,24 +220,25 @@ export default function Home({}) {
                 >
                   <a
                     className="showcase-preview_preview__HcSHu"
-                    href="/showcase"
+                    href="https://quizwizai.vercel.app"
+                    target="_blank"
                     style={
                       { width: "388px", height: "316px" } as React.CSSProperties
                     }
                   >
                     <img
-                      alt="Screenshot of Audible's website"
+                      alt="Screenshot of QuizWiz's website"
                       loading="lazy"
                       width={388}
                       height={316}
                       decoding="async"
                       data-nimg={1}
-                      srcSet="https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpreview-audible.6063405a.png&w=828&q=75&dpl=dpl_7sYJnsycDVdcxq5Fb62iEKdyeFjP 1x, https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpreview-audible.6063405a.png&w=828&q=75&dpl=dpl_7sYJnsycDVdcxq5Fb62iEKdyeFjP 2x"
-                      src="https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpreview-audible.6063405a.png&w=828&q=75&dpl=dpl_7sYJnsycDVdcxq5Fb62iEKdyeFjP"
+                      srcSet="https://i.ibb.co/g4g84Pc/quizwiz.png 1x, https://i.ibb.co/g4g84Pc/quizwiz.png 2x"
+                      src="https://i.ibb.co/g4g84Pc/quizwiz.png"
                       style={{ color: "transparent" } as React.CSSProperties}
                     />
                     <div className="showcase-preview_title__jFvZn">
-                      Audible
+                      QuizWiz
                       <hr />
                       <svg
                         className="with-icon_icon__MHUeb"
@@ -334,18 +335,18 @@ export default function Home({}) {
                   }
                 >
                   <img
-                    alt="Screenshot of Twitch's website"
+                    alt="Screenshot of MBGDS's website mobile"
                     loading="lazy"
                     width="302"
                     height="538"
                     decoding="async"
                     data-nimg="1"
-                    srcSet="https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpreview-twitch.4ed9ddb3.png&w=640&q=75&dpl=dpl_7sYJnsycDVdcxq5Fb62iEKdyeFjP 1x"
-                    src="https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpreview-twitch.4ed9ddb3.png&w=640&q=75&dpl=dpl_7sYJnsycDVdcxq5Fb62iEKdyeFjP"
+                    srcSet="https://i.ibb.co/dMZB4BJ/mbgaragedoorsllc-com-i-Phone-13-Pro-Max.png 1x"
+                    src="https://i.ibb.co/dMZB4BJ/mbgaragedoorsllc-com-i-Phone-13-Pro-Max.png"
                     style={{ color: "transparent" } as React.CSSProperties}
                   />
                   <div className="showcase-preview_title__jFvZn">
-                    Twitch
+                    MBGD
                     <hr />
                     <svg
                       className="with-icon_icon__MHUeb"
@@ -395,18 +396,18 @@ export default function Home({}) {
                   }
                 >
                   <img
-                    alt="Screenshot of Notion's website"
+                    alt="Screenshot of Oref's website"
                     loading="lazy"
                     width="390"
                     height="312"
                     decoding="async"
                     data-nimg="1"
-                    srcSet="https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpreview-notion.2bd1f0c5.png&w=828&q=75&dpl=dpl_7sYJnsycDVdcxq5Fb62iEKdyeFjP 1x, https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpreview-notion.2bd1f0c5.png&w=828&q=75&dpl=dpl_7sYJnsycDVdcxq5Fb62iEKdyeFjP 2x"
-                    src="https://nextjs.org/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fpreview-notion.2bd1f0c5.png&w=828&q=75&dpl=dpl_7sYJnsycDVdcxq5Fb62iEKdyeFjP"
+                    srcSet="https://i.ibb.co/TMwDc6p/Screenshot-2023-10-09-at-8-21-21-PM.png 1x, https://i.ibb.co/TMwDc6p/Screenshot-2023-10-09-at-8-21-21-PM.png 2x"
+                    src="https://i.ibb.co/TMwDc6p/Screenshot-2023-10-09-at-8-21-21-PM.png"
                     style={{ color: "transparent" } as React.CSSProperties}
                   />
                   <div className="showcase-preview_title__jFvZn">
-                    Notion
+                    Oref
                     <hr />
                     <svg
                       className="with-icon_icon__MHUeb"
@@ -668,9 +669,7 @@ export default function Home({}) {
             data-geist-button=""
             data-version="v1"
           >
-            <span className="button_content__1aE1_">
-              View Projects
-            </span>
+            <span className="button_content__1aE1_">View Projects</span>
           </a>
         </section>
 

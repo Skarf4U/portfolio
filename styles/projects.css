@@ -524,6 +524,7 @@
   width: 100%;
   height: 100%;
   transition: filter 0.15s ease;
+  object-fit: cover;
 }
 
 .showcase-preview_title__jFvZn {

@@ -564,3 +564,9 @@ h1 span {
 .intro_title__TZuNV::selection, .intro_title__TZuNV span::selection {
   -webkit-text-fill-color: var(--geist-foreground);
 }
+
+
+.button_invert__YNhnn:hover {
+  background: var(--themed-hover-bg,#383838);
+  --themed-border: var(--themed-hover-bg,var(--ds-gray-200))!important;
+}

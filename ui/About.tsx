@@ -209,13 +209,13 @@ export const About = () => {
               </radialGradient>
             </defs>
           </svg>
-          <div
+          {/* <div
             aria-hidden="true"
             className="intro_gridContainerLine__GHkon"
             data-fade="true"
             data-offset="true"
             data-side="left"
-          ></div>
+          ></div> */}
           <h1 className="intro_title__TZuNV intro_gridLineBottom__z9ocp gradient-text">
             Hello! I'm Adi, a{" "}
             <RainbowHighlight color={colors[0]}>
@@ -256,7 +256,7 @@ export const About = () => {
                 type="circle"
                 multiline={true}
                 animationDuration={1500}
-
+                animationDelay={500}
                 strokeWidth={2}
                 iterations={3}
                 padding={5}
@@ -341,13 +341,13 @@ export const About = () => {
               ></div>
             </div>
           </div>
-          <div
+          {/* <div
             aria-hidden="true"
             className="intro_gridContainerLine__GHkon"
             data-fade="true"
             data-offset="true"
             data-side="right"
-          ></div>
+          ></div> */}
         </RoughNotationGroup>
       </div>
     </main>
