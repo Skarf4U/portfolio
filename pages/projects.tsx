@@ -331,7 +331,7 @@ const projects = (props: Props) => {
                 className="showcase-sites_siteCard__Sba_V"
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://notion.com"
+                href="#"
               >
                 <div
                   className="stack_stack__iZkUS stack showcase-sites_siteImageSkeleton__hQrX7"
@@ -361,7 +361,7 @@ const projects = (props: Props) => {
                   />
                 </div>
                 <span className="showcase-sites_siteName__zyI1J">
-                  <p>Notion</p>
+                  <p>Blank</p>
                   <svg
                     aria-hidden="true"
                     className="showcase-sites_arrow__C830T"
@@ -379,13 +379,13 @@ const projects = (props: Props) => {
                     <path d="M10 7h7v7" />
                   </svg>
                 </span>
-                <p>tech</p>
+                <p>Web-App</p>
               </a>
               <a
                 className="showcase-sites_siteCard__Sba_V"
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://www.target.com/"
+                href="#"
               >
                 <div
                   className="stack_stack__iZkUS stack showcase-sites_siteImageSkeleton__hQrX7"
@@ -415,7 +415,7 @@ const projects = (props: Props) => {
                   />
                 </div>
                 <span className="showcase-sites_siteName__zyI1J">
-                  <p>Target</p>
+                  <p>Blank</p>
                   <svg
                     aria-hidden="true"
                     className="showcase-sites_arrow__C830T"
@@ -433,7 +433,7 @@ const projects = (props: Props) => {
                     <path d="M10 7h7v7" />
                   </svg>
                 </span>
-                <p>e-commerce</p>
+                <p>Web-App</p>
               </a>
             </div>
           </section>

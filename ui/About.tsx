@@ -212,17 +212,17 @@ export const About = () => {
               </radialGradient>
             </defs>
           </svg>
-          {/* <div
+          <div
             aria-hidden="true"
             className="intro_gridContainerLine__GHkon"
             data-fade="true"
             data-offset="true"
             data-side="left"
-          ></div> */}
+          ></div>
           <h1 className="intro_title__TZuNV intro_gridLineBottom__z9ocp gradient-text">
             Hello! I'm Adi, a{" "}
             <RainbowHighlight color={colors[0]}>
-              full-stack developer
+              full-stack web developer
             </RainbowHighlight>{" "}
             based in{" "}
             <RainbowHighlight color={colors[2]}>Israel</RainbowHighlight>.
@@ -239,10 +239,10 @@ export const About = () => {
               in the field of programming - mainly focused on{" "}
               <strong>
                 <RainbowHighlight color={colors[2]}>
-                  full-stack development
+                  full-stack web development
                 </RainbowHighlight>
+                .
               </strong>
-              /web development.
             </p>
             <p className="mt-2">
               I am now{" "}
@@ -350,13 +350,13 @@ export const About = () => {
               ></div>
             </div>
           </div>
-          {/* <div
+          <div
             aria-hidden="true"
             className="intro_gridContainerLine__GHkon"
             data-fade="true"
             data-offset="true"
             data-side="right"
-          ></div> */}
+          ></div>
         </RoughNotationGroup>
       </div>
     </main>
