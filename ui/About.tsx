@@ -26,16 +26,19 @@ export const About = () => {
     <main
       className="stack_stack__iZkUS stack intro_root__wSBQl"
       data-version="v1"
-      style={{
-        "--stack-flex": "initial",
-        "--stack-direction": "column",
-        "--stack-align": "center",
-        "--stack-justify": "flex-start",
-        "--stack-padding": "0px",
-        "--stack-gap": "0px",
-      } as React.CSSProperties}
+      style={
+        {
+          "--stack-flex": "initial",
+          "--stack-direction": "column",
+          "--stack-align": "center",
+          "--stack-justify": "flex-start",
+          "--stack-padding": "0px",
+          "--stack-gap": "0px",
+        } as React.CSSProperties
+      }
     >
       <svg
+        className="sm-hidden"
         fill="none"
         height="110"
         viewBox="0 0 800 110"
@@ -271,26 +274,30 @@ export const About = () => {
           <div
             className="stack_stack__iZkUS stack intro_footer__5Sy1W intro_gridLineBottom__z9ocp"
             data-version="v1"
-            style={{
-              "--stack-flex": "initial",
-              "--stack-direction": "column",
-              "--stack-align": "center",
-              "--stack-justify": "flex-start",
-              "--stack-padding": "0px",
-              "--stack-gap": "0px",
-            } as React.CSSProperties}
-          >
-            <div
-              className="stack_stack__iZkUS stack intro_buttons__hi64e"
-              data-version="v1"
-              style={{
+            style={
+              {
                 "--stack-flex": "initial",
                 "--stack-direction": "column",
                 "--stack-align": "center",
                 "--stack-justify": "flex-start",
                 "--stack-padding": "0px",
-                "--stack-gap": "16px",
-              } as React.CSSProperties}
+                "--stack-gap": "0px",
+              } as React.CSSProperties
+            }
+          >
+            <div
+              className="stack_stack__iZkUS stack intro_buttons__hi64e"
+              data-version="v1"
+              style={
+                {
+                  "--stack-flex": "initial",
+                  "--stack-direction": "column",
+                  "--stack-align": "center",
+                  "--stack-justify": "flex-start",
+                  "--stack-padding": "0px",
+                  "--stack-gap": "16px",
+                } as React.CSSProperties
+              }
             >
               <div
                 aria-hidden="true"
@@ -302,14 +309,16 @@ export const About = () => {
               <div
                 className="stack_stack__iZkUS stack"
                 data-version="v1"
-                style={{
-                  "--stack-flex": "initial",
-                  "--stack-direction": "row",
-                  "--stack-align": "stretch",
-                  "--stack-justify": "flex-start",
-                  "--stack-padding": "0px",
-                  "--stack-gap": "16px",
-                } as React.CSSProperties}
+                style={
+                  {
+                    "--stack-flex": "initial",
+                    "--stack-direction": "row",
+                    "--stack-align": "stretch",
+                    "--stack-justify": "flex-start",
+                    "--stack-padding": "0px",
+                    "--stack-gap": "16px",
+                  } as React.CSSProperties
+                }
               >
                 <a
                   role="link"

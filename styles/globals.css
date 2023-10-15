@@ -60,3 +60,9 @@ main {
 .__variable_e66fe9:root {
   --font-sans: "__Inter_e66fe9", "__Inter_Fallback_e66fe9";
 }
+
+@media screen and (max-width:640px) {
+  .sm-hidden {
+    display: none !important;
+  }
+}

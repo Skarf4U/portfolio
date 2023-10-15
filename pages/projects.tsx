@@ -1,12 +1,14 @@
 import { Footer } from "@/ui/Footer";
 import { Navigation } from "@/ui/Navigation";
 import React from "react";
+import { NextSeo } from "next-seo";
 
 type Props = {};
 
 const projects = (props: Props) => {
   return (
     <>
+      <NextSeo title="Adi Amar - Projects" />
       <Navigation />
       <div
         className="stack_stack__iZkUS stack"
@@ -72,8 +74,8 @@ const projects = (props: Props) => {
                   } as React.CSSProperties
                 }
               >
-                Find all projects on my GitHub.
-                Here you will find all of my live web applications.
+                Find all projects on my GitHub. Here you will find all of my
+                live web applications.
               </span>
               <span
                 className="hero_mobileSubtitle__Hth7a"
@@ -469,7 +471,7 @@ const projects = (props: Props) => {
                   } as React.CSSProperties
                 }
               >
-                <div className="templates_badgesWrapper__qMGpf">
+                {/* <div className="templates_badgesWrapper__qMGpf">
                   <div
                     className="stack_stack__iZkUS stack templates_badges__9OFie"
                     data-version="v1"
@@ -536,7 +538,7 @@ const projects = (props: Props) => {
                       Web3
                     </span>
                   </div>
-                </div>
+                </div> */}
                 <div
                   className="stack_stack__iZkUS stack"
                   data-version="v1"
@@ -569,7 +571,7 @@ const projects = (props: Props) => {
                   >
                     <span className="gradient-heading_wrapper__PlNTr">
                       <h2 className="gradient-heading_heading__aFoWg">
-                      Get your own site now
+                        Get your own site now
                       </h2>
                     </span>
                     <p className="templates_deploySubtext__pIEAp">
@@ -585,7 +587,8 @@ const projects = (props: Props) => {
                           } as React.CSSProperties
                         }
                       >
-                        Simply fill out the contact form and I will get back to you ASAP!
+                        Simply fill out the contact form and I will get back to
+                        you ASAP!
                       </span>
                     </p>
                   </div>
@@ -599,9 +602,7 @@ const projects = (props: Props) => {
                       { "--geist-icon-size": "16px" } as React.CSSProperties
                     }
                   >
-                    <span className="button_content__1aE1_">
-                      Contact me
-                    </span>
+                    <span className="button_content__1aE1_">Contact me</span>
                     <span className="button_suffix__ucg7R">
                       <svg
                         aria-hidden="true"
