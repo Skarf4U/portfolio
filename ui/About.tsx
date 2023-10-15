@@ -232,9 +232,9 @@ export const About = () => {
               I am recent high school graduate at the age of 17. Over the past
               five years, I've been dedicated to{" "}
               <strong>
-                <RainbowHighlight color={colors[1]}>
+                <RoughNotation type="box" iterations={5} animationDuration={1200} color={colors[1]}>
                   self-learning
-                </RainbowHighlight>
+                </RoughNotation>
               </strong>{" "}
               in the field of programming - mainly focused on{" "}
               <strong>
@@ -244,32 +244,43 @@ export const About = () => {
                 .
               </strong>
             </p>
-            <p className="mt-2">
-              I am now{" "}
-              <strong>
-                <RainbowHighlight color={colors[0]}>
-                  actively seeking employment opportunities
-                </RainbowHighlight>
-              </strong>{" "}
-              that will allow me to conduct research and development while
-              effectively applying my current expertise, furthering my
-              knowledge, acquiring new skills, and finding fulfillment in the
-              process.{" "}
-              <RoughNotation
-                type="circle"
-                multiline={true}
-                animationDuration={1500}
-                animationDelay={500}
-                strokeWidth={2}
-                iterations={3}
-                padding={5}
-                color={colors[1]}
-              >
-                <a className="font-medium text-gray-700 transition-colors hover:text-gray-900 focus:text-gray-900 focus:outline-none">
-                  Hire me?
-                </a>
-              </RoughNotation>
-            </p>
+            <RoughNotation
+              type="bracket"
+              brackets={['left', 'right']}
+              multiline={false}
+              animationDuration={1500}
+              iterations={3}
+              strokeWidth={3}
+              padding={5}
+              color={colors[3]}
+            >
+              <p className="mt-2">
+                I am now{" "}
+                <strong>
+                  <RainbowHighlight color={colors[0]}>
+                    actively seeking employment opportunities
+                  </RainbowHighlight>
+                </strong>{" "}
+                that will allow me to conduct research and development while
+                effectively applying my current expertise, furthering my
+                knowledge, acquiring new skills, and finding fulfillment in the
+                process.{" "}
+                <RoughNotation
+                  type="circle"
+                  multiline={true}
+                  animationDuration={1500}
+                  animationDelay={500}
+                  strokeWidth={2}
+                  iterations={3}
+                  padding={5}
+                  color={colors[1]}
+                >
+                  <a className="font-medium text-gray-700 transition-colors hover:text-gray-900 focus:text-gray-900 focus:outline-none">
+                    Hire me?
+                  </a>
+                </RoughNotation>
+              </p>
+            </RoughNotation>
           </div>
           <div
             className="stack_stack__iZkUS stack intro_footer__5Sy1W intro_gridLineBottom__z9ocp"
