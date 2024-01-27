@@ -277,7 +277,7 @@ const projects = (props: Props) => {
                 className="showcase-sites_siteCard__Sba_V"
                 rel="noopener noreferrer"
                 target="_blank"
-                href="https://www.mbgaragedoorsllc.com"
+                href="https://mbgaragedoorsllc.com/"
               >
                 <div
                   className="stack_stack__iZkUS stack showcase-sites_siteImageSkeleton__hQrX7"
@@ -471,74 +471,6 @@ const projects = (props: Props) => {
                   } as React.CSSProperties
                 }
               >
-                {/* <div className="templates_badgesWrapper__qMGpf">
-                  <div
-                    className="stack_stack__iZkUS stack templates_badges__9OFie"
-                    data-version="v1"
-                    style={
-                      {
-                        "--stack-flex": "initial",
-                        "--stack-direction": "row",
-                        "--stack-align": "stretch",
-                        "--stack-justify": "flex-start",
-                        "--stack-padding": "0px",
-                        "--stack-gap": "16px",
-                      } as React.CSSProperties
-                    }
-                  >
-                    <span
-                      className="templates_badge__Hhdm7"
-                      data-color="purple"
-                    >
-                      Starter
-                    </span>
-                    <span className="templates_badge__Hhdm7" data-color="green">
-                      Ecommerce
-                    </span>
-                    <span className="templates_badge__Hhdm7" data-color="amber">
-                      Blog
-                    </span>
-                    <span className="templates_badge__Hhdm7" data-color="blue">
-                      AI
-                    </span>
-                    <span
-                      className="templates_badge__Hhdm7"
-                      data-color="purple"
-                    >
-                      Edge Functions
-                    </span>
-                    <span className="templates_badge__Hhdm7" data-color="green">
-                      Edge Config
-                    </span>
-                    <span className="templates_badge__Hhdm7" data-color="amber">
-                      Portfolio
-                    </span>
-                    <span className="templates_badge__Hhdm7" data-color="blue">
-                      SaaS
-                    </span>
-                    <span
-                      className="templates_badge__Hhdm7"
-                      data-color="purple"
-                    >
-                      Multi-tenant Apps
-                    </span>
-                    <span className="templates_badge__Hhdm7" data-color="green">
-                      Realtime Apps
-                    </span>
-                    <span className="templates_badge__Hhdm7" data-color="amber">
-                      Documentation
-                    </span>
-                    <span className="templates_badge__Hhdm7" data-color="blue">
-                      Virtual Event
-                    </span>
-                    <span
-                      className="templates_badge__Hhdm7"
-                      data-color="purple"
-                    >
-                      Web3
-                    </span>
-                  </div>
-                </div> */}
                 <div
                   className="stack_stack__iZkUS stack"
                   data-version="v1"
@@ -664,8 +596,8 @@ const projects = (props: Props) => {
                     data-nimg="1"
                     className="templates_image__OUeIH"
                     style={{ color: "transparent" } as React.CSSProperties}
-                    srcSet="https://nextjs.org/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1677122002%2Fnextjs%2Fshowcase%2Ftemplate-next-boilerplate.jpg&w=3840&q=75&dpl=dpl_HX9pZoJVQmgYX6j9Wr9Z8WSSFRXm 1x, https://nextjs.org/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1677122002%2Fnextjs%2Fshowcase%2Ftemplate-next-boilerplate.jpg&w=3840&q=75&dpl=dpl_HX9pZoJVQmgYX6j9Wr9Z8WSSFRXm 2x"
-                    src="https://nextjs.org/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1677122002%2Fnextjs%2Fshowcase%2Ftemplate-next-boilerplate.jpg&w=3840&q=75&dpl=dpl_HX9pZoJVQmgYX6j9Wr9Z8WSSFRXm"
+                    srcSet="https://i.ibb.co/1bB008T/mbgd.png"
+                    src="https://i.ibb.co/1bB008T/mbgd.png"
                   />
                   <div
                     className="stack_stack__iZkUS stack templates_description__PAAfR"
@@ -681,8 +613,8 @@ const projects = (props: Props) => {
                       } as React.CSSProperties
                     }
                   >
-                    <p>Next.js Boilerplate</p>
-                    <p>A Next.js app and a Serverless Function API.</p>
+                    <p>Myrtle Beach Garage Doors LLC</p>
+                    <p>A fully functional website for a garage door company.</p>
                   </div>
                 </div>
                 <div
@@ -709,8 +641,8 @@ const projects = (props: Props) => {
                     data-nimg="1"
                     className="templates_image__OUeIH"
                     style={{ color: "transparent" } as React.CSSProperties}
-                    srcSet="https://nextjs.org/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1677122387%2Fnextjs%2Fshowcase%2Ftemplate-next-gallery.jpg&w=3840&q=75&dpl=dpl_HX9pZoJVQmgYX6j9Wr9Z8WSSFRXm 1x, https://nextjs.org/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1677122387%2Fnextjs%2Fshowcase%2Ftemplate-next-gallery.jpg&w=3840&q=75&dpl=dpl_HX9pZoJVQmgYX6j9Wr9Z8WSSFRXm 2x"
-                    src="https://nextjs.org/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1677122387%2Fnextjs%2Fshowcase%2Ftemplate-next-gallery.jpg&w=3840&q=75&dpl=dpl_HX9pZoJVQmgYX6j9Wr9Z8WSSFRXm"
+                    srcSet="https://i.ibb.co/TMwDc6p/Screenshot-2023-10-09-at-8-21-21-PM.png"
+                    src="https://i.ibb.co/g4g84Pc/quizwiz.png"
                   />
                   <div
                     className="stack_stack__iZkUS stack templates_description__PAAfR"
@@ -726,8 +658,8 @@ const projects = (props: Props) => {
                       } as React.CSSProperties
                     }
                   >
-                    <p>Image Gallery Starter</p>
-                    <p>An image gallery built on Next.js and Cloudinary.</p>
+                    <p>QuizWiz</p>
+                    <p>An AI quizzing web application.</p>
                   </div>
                 </div>
                 <div
@@ -754,8 +686,8 @@ const projects = (props: Props) => {
                     data-nimg="1"
                     className="templates_image__OUeIH"
                     style={{ color: "transparent" } as React.CSSProperties}
-                    srcSet="https://nextjs.org/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1677122003%2Fnextjs%2Fshowcase%2Ftemplate-next-commerce.jpg&w=3840&q=75&dpl=dpl_HX9pZoJVQmgYX6j9Wr9Z8WSSFRXm 1x, https://nextjs.org/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1677122003%2Fnextjs%2Fshowcase%2Ftemplate-next-commerce.jpg&w=3840&q=75&dpl=dpl_HX9pZoJVQmgYX6j9Wr9Z8WSSFRXm 2x"
-                    src="https://nextjs.org/_next/image?url=https%3A%2F%2Fassets.vercel.com%2Fimage%2Fupload%2Fv1677122003%2Fnextjs%2Fshowcase%2Ftemplate-next-commerce.jpg&w=3840&q=75&dpl=dpl_HX9pZoJVQmgYX6j9Wr9Z8WSSFRXm"
+                    srcSet="https://i.ibb.co/vX28kkQ/invan.png"
+                    src="https://i.ibb.co/vX28kkQ/invan.png"
                   />
                   <div
                     className="stack_stack__iZkUS stack templates_description__PAAfR"
@@ -771,10 +703,9 @@ const projects = (props: Props) => {
                       } as React.CSSProperties
                     }
                   >
-                    <p>Next.js Commerce</p>
+                    <p>Invan</p>
                     <p>
-                      An all-in-one starter kit for high-performance e-commerce
-                      sites.
+                      A full-stack web application for managing your business and inventory.
                     </p>
                   </div>
                 </div>
