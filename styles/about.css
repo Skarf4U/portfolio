@@ -95,17 +95,23 @@ h1 span {
   --a-easing: cubic-bezier(0.645, 0.045, 0.355, 1);
   width: 100%;
   max-width: calc(1234px + var(--root-padding) * 2);
-  min-height: 720px;
+  /* min-height: 720px; */
   text-align: center;
   margin: 80px auto 0;
   padding: 0 var(--root-padding);
   overflow: hidden;
   isolation: isolate;
 }
+
+@media (max-width: 768px) {
+  .intro_root__wSBQl {
+    padding: 0px;
+  }
+}
 .intro_intro__k2TZw {
   position: relative;
 }
-
+/* 
 .intro_gridLineBottom__z9ocp:after,
 .intro_gridLineTop__WIuPu:before {
   content: "";
@@ -134,15 +140,15 @@ h1 span {
     linear-gradient(#000, #000);
   -webkit-mask-composite: destination-in;
   mask-composite: exclude;
-}
+} */
 .intro_gridLineTop__WIuPu:before {
   top: 0;
 }
-.intro_root__wSBQl .intro_gridContainerLine__GHkon,
+/* .intro_root__wSBQl .intro_gridContainerLine__GHkon,
 .intro_root__wSBQl .intro_gridLineBottom__z9ocp:after,
 .intro_root__wSBQl .intro_gridLineTop__WIuPu:before {
   --line-color: rgba(0, 0, 0, calc(var(--line-opacity) * 3));
-}
+} */
 .intro_root__wSBQl .intro_gridLineTop__WIuPu:before {
   width: 0;
   animation: intro_width__3hQft var(--a-duration) var(--a-easing) forwards;
@@ -181,11 +187,6 @@ h1 span {
     transparent
   );
   background-size: var(--line-width) var(--line-gap);
-}
-.intro_root__wSBQl .intro_gridContainerLine__GHkon,
-.intro_root__wSBQl .intro_gridLineBottom__z9ocp:after,
-.intro_root__wSBQl .intro_gridLineTop__WIuPu:before {
-  --line-color: rgba(0, 0, 0, calc(var(--line-opacity) * 3));
 }
 
 .intro_gridContainerLine__GHkon[data-side="left"] {
@@ -230,9 +231,9 @@ h1 span {
 }
 
 .intro_title__TZuNV {
-  background: var(--text-gradient);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  /* background: var(--text-gradient); */
+  /* -webkit-background-clip: text; */
+  /* -webkit-text-fill-color: transparent; */
   font-weight: 800;
   font-size: max(48px, min(5vw, 76px));
   line-height: 1;
@@ -271,53 +272,18 @@ h1 span {
   transform: rotate(180deg);
 }
 
-.intro_gridLineBottom__z9ocp:after,
-.intro_gridLineTop__WIuPu:before {
-  content: "";
-  position: absolute;
-  width: calc(100% + var(--line-offset));
-  left: calc(var(--line-offset) / 2 * -1);
-  height: var(--line-width);
-  background: linear-gradient(
-    to right,
-    var(--line-color),
-    var(--line-color) 50%,
-    transparent 0,
-    transparent
-  );
-  background-size: var(--line-gap) var(--line-width);
-  -webkit-mask: linear-gradient(
-      to left,
-      var(--geist-background) var(--line-fade-stop),
-      transparent
-    ),
-    linear-gradient(
-      to right,
-      var(--geist-background) var(--line-fade-stop),
-      transparent
-    ),
-    linear-gradient(#000, #000);
-  -webkit-mask-composite: destination-in;
-  mask-composite: exclude;
-}
-
 .intro_gridLineBottom__z9ocp:after {
   bottom: -0.1px;
-}
-.intro_root__wSBQl .intro_gridContainerLine__GHkon,
-.intro_root__wSBQl .intro_gridLineBottom__z9ocp:after,
-.intro_root__wSBQl .intro_gridLineTop__WIuPu:before {
-  --line-color: rgba(0, 0, 0, calc(var(--line-opacity) * 3));
 }
 
 .intro_root__wSBQl .intro_gridLineBottom__z9ocp:after {
   width: 0;
 }
 
-.intro_root__wSBQl .intro_title__TZuNV.intro_gridLineBottom__z9ocp:after {
+/* .intro_root__wSBQl .intro_title__TZuNV.intro_gridLineBottom__z9ocp:after {
   animation: intro_width__3hQft var(--a-duration) var(--a-easing) forwards;
   animation-delay: calc(var(--a-delay) + 0.1s);
-}
+} */
 
 .intro_subtitle__7jvxT {
   color: var(--accents-5);
@@ -339,44 +305,6 @@ h1 span {
 .intro_subtitle__7jvxT strong {
   font-weight: 500;
   color: var(--accents-8);
-}
-
-.intro_gridLineBottom__z9ocp:after,
-.intro_gridLineTop__WIuPu:before {
-  content: "";
-  position: absolute;
-  width: calc(100% + var(--line-offset));
-  left: calc(var(--line-offset) / 2 * -1);
-  height: var(--line-width);
-  background: linear-gradient(
-    to right,
-    var(--line-color),
-    var(--line-color) 50%,
-    transparent 0,
-    transparent
-  );
-  background-size: var(--line-gap) var(--line-width);
-  -webkit-mask: linear-gradient(
-      to left,
-      var(--geist-background) var(--line-fade-stop),
-      transparent
-    ),
-    linear-gradient(
-      to right,
-      var(--geist-background) var(--line-fade-stop),
-      transparent
-    ),
-    linear-gradient(#000, #000);
-  -webkit-mask-composite: destination-in;
-  mask-composite: exclude;
-}
-.intro_gridLineBottom__z9ocp:after {
-  bottom: -0.1px;
-}
-.intro_root__wSBQl .intro_gridContainerLine__GHkon,
-.intro_root__wSBQl .intro_gridLineBottom__z9ocp:after,
-.intro_root__wSBQl .intro_gridLineTop__WIuPu:before {
-  --line-color: rgba(0, 0, 0, calc(var(--line-opacity) * 3));
 }
 
 .intro_root__wSBQl .intro_gridLineBottom__z9ocp:after {
@@ -411,11 +339,6 @@ h1 span {
     transparent
   );
   background-size: var(--line-width) var(--line-gap);
-}
-.intro_root__wSBQl .intro_gridContainerLine__GHkon,
-.intro_root__wSBQl .intro_gridLineBottom__z9ocp:after,
-.intro_root__wSBQl .intro_gridLineTop__WIuPu:before {
-  --line-color: rgba(0, 0, 0, calc(var(--line-opacity) * 3));
 }
 
 .intro_gridContainerLine__GHkon[data-side="left"] {
@@ -513,45 +436,9 @@ h1 span {
   left: 0;
 }
 
-.intro_gridLineBottom__z9ocp:after,
-.intro_gridLineTop__WIuPu:before {
-  content: "";
-  position: absolute;
-  width: calc(100% + var(--line-offset));
-  left: 0;
-  height: var(--line-width);
-  background: linear-gradient(
-    to right,
-    var(--line-color),
-    var(--line-color) 50%,
-    transparent 0,
-    transparent
-  );
-  background-size: var(--line-gap) var(--line-width);
-  -webkit-mask: linear-gradient(
-      to left,
-      var(--geist-background) var(--line-fade-stop),
-      transparent
-    ),
-    linear-gradient(
-      to right,
-      var(--geist-background) var(--line-fade-stop),
-      transparent
-    ),
-    linear-gradient(#000, #000);
-  -webkit-mask-composite: destination-in;
-  mask-composite: exclude;
-}
-
 .intro_gridLineBottom__z9ocp:after {
   bottom: -0.1px;
 }
-.intro_root__wSBQl .intro_gridContainerLine__GHkon,
-.intro_root__wSBQl .intro_gridLineBottom__z9ocp:after,
-.intro_root__wSBQl .intro_gridLineTop__WIuPu:before {
-  --line-color: rgba(0, 0, 0, 0.45);
-}
-
 .intro_root__wSBQl .intro_gridLineBottom__z9ocp:after {
   width: 100%;
 }
@@ -561,12 +448,76 @@ h1 span {
   animation-delay: calc(var(--a-delay) + 0.3s);
 }
 
-.intro_title__TZuNV::selection, .intro_title__TZuNV span::selection {
+.intro_title__TZuNV::selection,
+.intro_title__TZuNV span::selection {
   -webkit-text-fill-color: var(--geist-foreground);
 }
 
-
 .button_invert__YNhnn:hover {
-  background: var(--themed-hover-bg,#383838);
-  --themed-border: var(--themed-hover-bg,var(--ds-gray-200))!important;
+  background: var(--themed-hover-bg, #383838);
+  --themed-border: var(--themed-hover-bg, var(--ds-gray-200)) !important;
+}
+
+.emoji {
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  transition: text-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.emoji:hover {
+  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
+}
+
+.emoji:before {
+  content: "✌️";
+}
+
+.emoji:hover:before {
+  content: "🇮🇱";
+}
+
+.contact-link:hover img:nth-child(1) {
+  display: none;
+}
+
+.contact-link:hover img:nth-child(2) {
+  display: block;
+}
+
+.wave {
+  display: inline-block;
+}
+
+.contact-link:hover .wave,
+.wave:hover {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }

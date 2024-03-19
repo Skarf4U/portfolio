@@ -119,7 +119,7 @@ const contact = (props: Props) => {
                 } as React.CSSProperties
               }
             >
-              Thanks for getting in touch, we will reach out shortly.
+              Thanks for getting in touch, I will reach out shortly.
             </p>
             <div
               className="stack_stack__iZkUS stack"
@@ -135,143 +135,12 @@ const contact = (props: Props) => {
                 } as React.CSSProperties
               }
             >
-              <ul className="contact-sales_cardContainer__fD75k">
-                <li className="contact-sales_card__mUZ0c">
-                  <svg
-                    className="contact-sales_arrowUpRight__MnkSk"
-                    data-testid="geist-icon"
-                    fill="none"
-                    height="24"
-                    shape-rendering="geometricPrecision"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    style={{ color: "currentcolor" } as React.CSSProperties}
-                  >
-                    <path d="M7 17L17 7"></path>
-                    <path d="M7 7h10v10"></path>
-                  </svg>
-                  <h2
-                    className="text_wrapper__i87JK contact-sales_devolverQuote___YWW5"
-                    data-version="v1"
-                    style={
-                      {
-                        "--text-color": "var(--ds-gray-1000)",
-                        "--text-size": "0.875rem",
-                        "--text-line-height": "3.5rem",
-                        "--text-letter-spacing": "initial",
-                        "--text-weight": 400,
-                      } as React.CSSProperties
-                    }
-                  >
-                    <a className="link_link__hbWKh" href="/customers/devolver">
-                      <span
-                        className="text_wrapper__i87JK contact-sales_percentage__RmIUV"
-                        data-version="v1"
-                        style={
-                          {
-                            "--text-color": "var(--ds-gray-1000)",
-                            "--text-size": "0.875rem",
-                            "--text-line-height": "1.25rem",
-                            "--text-letter-spacing": "initial",
-                            "--text-weight": 400,
-                          } as React.CSSProperties
-                        }
-                      >
-                        73%
-                      </span>
-                      faster project creation with Vercel
-                    </a>
-                  </h2>
-                  <img
-                    data-version="v1"
-                    alt="Logo for Devolver Digital"
-                    loading="lazy"
-                    width="120"
-                    height="54"
-                    decoding="async"
-                    data-nimg="1"
-                    className="image_intrinsic__ulrJk contact-sales_logo__m0gvL"
-                    srcSet="https://assets.vercel.com/image/upload/front/home/new/logos/devolver-digital.svg 1x, https://assets.vercel.com/image/upload/front/home/new/logos/devolver-digital.svg 2x"
-                    src="https://assets.vercel.com/image/upload/front/home/new/logos/devolver-digital.svg"
-                    style={{ color: "transparent" } as React.CSSProperties}
-                  />
-                </li>
-                <li className="contact-sales_card__mUZ0c">
-                  <svg
-                    className="contact-sales_arrowUpRight__MnkSk"
-                    data-testid="geist-icon"
-                    fill="none"
-                    height="24"
-                    shape-rendering="geometricPrecision"
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="1.5"
-                    viewBox="0 0 24 24"
-                    width="24"
-                    style={{ color: "currentcolor" } as React.CSSProperties}
-                  >
-                    <path d="M7 17L17 7"></path>
-                    <path d="M7 7h10v10"></path>
-                  </svg>
-                  <p
-                    className="text_wrapper__i87JK contact-sales_improvementTitle__AfXhB"
-                    data-version="v1"
-                    style={
-                      {
-                        "--text-color": "var(--ds-gray-1000)",
-                        "--text-size": "2rem",
-                        "--text-line-height": "2.5rem",
-                        "--text-letter-spacing": "-0.049375rem",
-                        "--text-weight": 700,
-                      } as React.CSSProperties
-                    }
-                  >
-                    4 ways to improve your frontend workflow
-                  </p>
-                  <p
-                    className="text_wrapper__i87JK contact-sales_improvementQuote__40jW2"
-                    data-version="v1"
-                    style={
-                      {
-                        "--text-color": "var(--ds-gray-900)",
-                        "--text-size": "1rem",
-                        "--text-line-height": "1.5rem",
-                        "--text-letter-spacing": "initial",
-                        "--text-weight": 400,
-                      } as React.CSSProperties
-                    }
-                  >
-                    Learn what makes a healthy Web development workflow and how
-                    Vercel accelerates that journey at every stage while making
-                    the developer experience genuinely great.
-                  </p>
-                  <h2
-                    className="text_wrapper__i87JK"
-                    data-version="v1"
-                    style={
-                      {
-                        "--text-color": "var(--ds-gray-1000)",
-                        "--text-size": "0.875rem",
-                        "--text-line-height": "3.5rem",
-                        "--text-letter-spacing": "initial",
-                        "--text-weight": 400,
-                      } as React.CSSProperties
-                    }
-                  >
-                    <a
-                      className="link_link__hbWKh contact-sales_guideLink___9CQI"
-                      href="/try/ebook-workflow"
-                    >
-                      Get The Guide
-                    </a>
-                  </h2>
-                </li>
-              </ul>
+              <h1 className="contact-link text-5xl font-extrabold pt-10">
+                <a href="/contact" className="flex flex-row items-center">
+                  <span className="home mr-2">🏠</span>
+                  go back to the homepage
+                </a>
+              </h1>
             </div>
           </div>
         ) : (
@@ -600,8 +469,8 @@ const contact = (props: Props) => {
                         } as React.CSSProperties
                       }
                     >
-                      "Every great project begins with a simple 'Hello.' Let's
-                      start building something amazing together.”
+                      Every great project begins with a simple hello <span className="wave mr-2">👋</span>. Let's
+                      start building something amazing together.
                     </p>
                   </blockquote>
                 </figure>
@@ -639,7 +508,6 @@ const contact = (props: Props) => {
           </div>
         )}
       </div>
-      <Footer />
     </>
   );
 };

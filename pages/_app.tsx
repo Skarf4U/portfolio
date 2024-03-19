@@ -11,6 +11,7 @@ import "../styles/contact.css";
 import "../styles/skills.css";
 import "../styles/nav.css";
 import "../styles/footer.css";
+import "../styles/showcase.css";
 
 export default function App({ Component, pageProps }: AppProps) {
   useAnalytics();
