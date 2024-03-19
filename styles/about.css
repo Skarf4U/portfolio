@@ -483,12 +483,21 @@ h1 span {
   display: block;
 }
 
-.wave {
+.wave,
+.home {
   display: inline-block;
 }
 
 .contact-link:hover .wave,
 .wave:hover {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+}
+
+.home-link:hover .home,
+.home:hover {
   animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
   animation-duration: 2.5s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */
@@ -520,4 +529,68 @@ h1 span {
   100% {
     transform: rotate(0deg);
   }
+}
+
+/* Emoji Swap on Hover */
+
+[data-framer-generated] * {
+  pointer-events: unset;
+}
+.framer-1y14nzt-container,
+.framer-i4bt4z {
+  flex: none;
+  height: auto;
+  position: relative;
+  width: auto;
+}
+.framer-1y14nzt-container {
+  flex: 0 0 auto;
+  height: auto;
+  position: relative;
+  width: auto;
+}
+
+.framer-Hm2O7 .framer-1rffv2r {
+  place-content: center;
+  align-items: center;
+  display: flex;
+  flex-flow: row;
+  gap: 10px;
+  height: min-content;
+  overflow: hidden;
+  padding: 0px;
+  position: relative;
+  width: min-content;
+}
+.framer-Hm2O7 .framer-kclvnb {
+  bottom: 0px;
+  flex: 0 0 auto;
+  height: auto;
+  left: 0px;
+  position: absolute;
+  white-space: pre;
+  width: auto;
+  z-index: 1;
+}
+.framer-Hm2O7 .framer-pq1jwt {
+  flex: 0 0 auto;
+  height: auto;
+  position: relative;
+  white-space: pre;
+  width: auto;
+}
+.framer-pq1jwt,
+.framer-kclvnb {
+  transition: .1s ease-in;
+}
+
+.framer-1y14nzt-container:hover .framer-pq1jwt {
+  opacity: 0 !important;
+  transform: rotate(40deg) !important;
+}
+
+.framer-1y14nzt-container:hover .framer-kclvnb {
+  opacity: 1 !important;
+  transform: none !important;
+  transform-origin: 70% 70% !important;
 }

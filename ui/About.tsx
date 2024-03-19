@@ -71,10 +71,106 @@ export const About = () => {
           </svg>
           {/* <h1 className="intro_title__TZuNV intro_gridLineBottom__z9ocp gradient-text"> */}
           <h1 className="intro_title__TZuNV intro_gridLineBottom__z9ocp">
-            I'm Adi <span className="emoji"></span>, a{" "}
+            <div className="flex flex-row items-center justify-center gap-3">
+              I'm Adi{" "}
+              <div
+                className="framer-1y14nzt-container"
+                style={{
+                  opacity: "1",
+                  "-webkit-transform":
+                    "perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) translateZ(0px)",
+                  "-ms-transform":
+                    "perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) translateZ(0px)",
+                  transform:
+                    "perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) translateZ(0px)",
+                }}
+                bis_skin_checked={1}
+              >
+                <div
+                  data-framer-generated="true"
+                  className="framer-Hm2O7 framer-jleic framer-v-1rffv2r"
+                  style={{ display: "contents", "pointer-events": "auto" }}
+                  bis_skin_checked={1}
+                >
+                  <div
+                    className="framer-1rffv2r"
+                    style={{ opacity: "1" }}
+                    bis_skin_checked={1}
+                    data-framer-name="Variant 1"
+                  >
+                    <div
+                      className="framer-kclvnb"
+                      style={{
+                        outline: "none",
+                        display: "flex",
+                        "-webkit-flex-direction": "column",
+                        "-ms-flex-direction": "column",
+                        "flex-direction": "column",
+                        "-webkit-box-pack": "start",
+                        "-webkit-justify-content": "flex-start",
+                        "-ms-flex-pack": "start",
+                        "justify-content": "flex-start",
+                        "-webkit-flex-shrink": "0",
+                        "-ms-flex-shrink": "0",
+                        "flex-shrink": "0",
+                        "--framer-link-text-color": "rgb(0, 153, 255)",
+                        "--framer-link-text-decoration": "underline",
+                        "--framer-paragraph-spacing": "0px",
+                        opacity: "0",
+                        "-webkit-transform": "rotate(-60deg) translateZ(0px)",
+                        "-ms-transform": "rotate(-60deg) translateZ(0px)",
+                        transform: "rotate(-60deg) translateZ(0px)",
+                      }}
+                      data-framer-component-type="RichTextContainer"
+                      bis_skin_checked={1}
+                    >
+                      <h1
+                        className="framer-text framer-styles-preset-1hicncd"
+                        data-styles-preset="X56cAq5NO"
+                      >
+                        🇮🇱
+                      </h1>
+                    </div>
+                    <div
+                      className="framer-pq1jwt"
+                      style={{
+                        outline: "none",
+                        display: "flex",
+                        "-webkit-flex-direction": "column",
+                        "-ms-flex-direction": "column",
+                        "flex-direction": "column",
+                        "-webkit-box-pack": "start",
+                        "-webkit-justify-content": "flex-start",
+                        "-ms-flex-pack": "start",
+                        "justify-content": "flex-start",
+                        "-webkit-flex-shrink": "0",
+                        "-ms-flex-shrink": "0",
+                        "flex-shrink": "0",
+                        "--framer-link-text-color": "rgb(0, 153, 255)",
+                        "--framer-link-text-decoration": "underline",
+                        "--framer-paragraph-spacing": "0px",
+                        opacity: "1",
+                        "-webkit-transform": "none",
+                        "-ms-transform": "none",
+                        transform: "none",
+                      }}
+                      data-framer-component-type="RichTextContainer"
+                      bis_skin_checked={1}
+                    >
+                      <h1
+                        className="framer-text framer-styles-preset-1hicncd"
+                        data-styles-preset="X56cAq5NO"
+                      >
+                        ✌️{" "}
+                      </h1>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
             <RainbowHighlight color={colors[0]}>full stack</RainbowHighlight>{" "}
-            web developer based in{" "}
-            <RainbowHighlight color={colors[2]}>Israel</RainbowHighlight>.
+            web developer.
           </h1>
 
           <div

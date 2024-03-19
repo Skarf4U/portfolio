@@ -135,10 +135,10 @@ const contact = (props: Props) => {
                 } as React.CSSProperties
               }
             >
-              <h1 className="contact-link text-5xl font-extrabold pt-10">
-                <a href="/contact" className="flex flex-row items-center">
+              <h1 className="home-link text-2xl font-extrabold pt-10">
+                <a href="/" className="flex flex-row items-center">
                   <span className="home mr-2">🏠</span>
-                  go back to the homepage
+                  back to homepage
                 </a>
               </h1>
             </div>
