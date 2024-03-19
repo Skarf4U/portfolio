@@ -77,25 +77,16 @@ export const About = () => {
                 className="framer-1y14nzt-container"
                 style={{
                   opacity: "1",
-                  "-webkit-transform":
-                    "perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) translateZ(0px)",
-                  "-ms-transform":
-                    "perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) translateZ(0px)",
-                  transform:
-                    "perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) translateZ(0px)",
                 }}
-                bis_skin_checked={1}
               >
                 <div
                   data-framer-generated="true"
                   className="framer-Hm2O7 framer-jleic framer-v-1rffv2r"
                   style={{ display: "contents", "pointer-events": "auto" }}
-                  bis_skin_checked={1}
                 >
                   <div
                     className="framer-1rffv2r"
                     style={{ opacity: "1" }}
-                    bis_skin_checked={1}
                     data-framer-name="Variant 1"
                   >
                     <div
@@ -122,7 +113,6 @@ export const About = () => {
                         transform: "rotate(-60deg) translateZ(0px)",
                       }}
                       data-framer-component-type="RichTextContainer"
-                      bis_skin_checked={1}
                     >
                       <h1
                         className="framer-text framer-styles-preset-1hicncd"
@@ -155,7 +145,6 @@ export const About = () => {
                         transform: "none",
                       }}
                       data-framer-component-type="RichTextContainer"
-                      bis_skin_checked={1}
                     >
                       <h1
                         className="framer-text framer-styles-preset-1hicncd"
@@ -168,7 +157,6 @@ export const About = () => {
                 </div>
               </div>
             </div>
-            
             <RainbowHighlight color={colors[0]}>full stack</RainbowHighlight>{" "}
             web developer.
           </h1>

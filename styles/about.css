@@ -548,6 +548,9 @@ h1 span {
   height: auto;
   position: relative;
   width: auto;
+  -webkit-transform: perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) translateZ(0px);
+  -ms-transform: perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) translateZ(0px);
+  transform: perspective(1200px) translateX(0px) translateY(0px) scale(1) rotate(0deg) rotateX(0deg) rotateY(0deg) translateZ(0px);
 }
 
 .framer-Hm2O7 .framer-1rffv2r {
