@@ -73,16 +73,11 @@ export const About = () => {
           <h1 className="intro_title__TZuNV intro_gridLineBottom__z9ocp">
             <div className="flex flex-row items-center justify-center gap-3">
               I'm Adi{" "}
-              <div
-                className="framer-1y14nzt-container"
-                style={{
-                  opacity: "1",
-                }}
-              >
+              <div className="framer-1y14nzt-container">
                 <div
                   data-framer-generated="true"
                   className="framer-Hm2O7 framer-jleic framer-v-1rffv2r"
-                  style={{ display: "contents", "pointer-events": "auto" }}
+                  style={{ display: "contents" }}
                 >
                   <div
                     className="framer-1rffv2r"
@@ -91,27 +86,6 @@ export const About = () => {
                   >
                     <div
                       className="framer-kclvnb"
-                      style={{
-                        outline: "none",
-                        display: "flex",
-                        "-webkit-flex-direction": "column",
-                        "-ms-flex-direction": "column",
-                        "flex-direction": "column",
-                        "-webkit-box-pack": "start",
-                        "-webkit-justify-content": "flex-start",
-                        "-ms-flex-pack": "start",
-                        "justify-content": "flex-start",
-                        "-webkit-flex-shrink": "0",
-                        "-ms-flex-shrink": "0",
-                        "flex-shrink": "0",
-                        "--framer-link-text-color": "rgb(0, 153, 255)",
-                        "--framer-link-text-decoration": "underline",
-                        "--framer-paragraph-spacing": "0px",
-                        opacity: "0",
-                        "-webkit-transform": "rotate(-60deg) translateZ(0px)",
-                        "-ms-transform": "rotate(-60deg) translateZ(0px)",
-                        transform: "rotate(-60deg) translateZ(0px)",
-                      }}
                       data-framer-component-type="RichTextContainer"
                     >
                       <h1
@@ -123,27 +97,6 @@ export const About = () => {
                     </div>
                     <div
                       className="framer-pq1jwt"
-                      style={{
-                        outline: "none",
-                        display: "flex",
-                        "-webkit-flex-direction": "column",
-                        "-ms-flex-direction": "column",
-                        "flex-direction": "column",
-                        "-webkit-box-pack": "start",
-                        "-webkit-justify-content": "flex-start",
-                        "-ms-flex-pack": "start",
-                        "justify-content": "flex-start",
-                        "-webkit-flex-shrink": "0",
-                        "-ms-flex-shrink": "0",
-                        "flex-shrink": "0",
-                        "--framer-link-text-color": "rgb(0, 153, 255)",
-                        "--framer-link-text-decoration": "underline",
-                        "--framer-paragraph-spacing": "0px",
-                        opacity: "1",
-                        "-webkit-transform": "none",
-                        "-ms-transform": "none",
-                        transform: "none",
-                      }}
                       data-framer-component-type="RichTextContainer"
                     >
                       <h1
