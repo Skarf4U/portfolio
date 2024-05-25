@@ -103,7 +103,7 @@ export const About = () => {
                         className="framer-text framer-styles-preset-1hicncd"
                         data-styles-preset="X56cAq5NO"
                       >
-                        ✌️{" "}
+                        ✌️
                       </h1>
                     </div>
                   </div>

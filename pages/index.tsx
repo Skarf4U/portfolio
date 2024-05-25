@@ -31,31 +31,8 @@ export default function Home({}) {
         </div>
         <div id="projects" className="projects">
           <div className="small-box-wrapper animate-in">
-            <a href="https://github.com/Skarf4U" target="_blank">
-              <div className="small-box instagram">
-                <video
-                  className="instagram-video"
-                  autoPlay
-                  muted
-                  loop
-                  playsInline
-                >
-                  <source src="/videos/private.mp4" type="video/mp4" />
-                </video>
-              </div>
-              <div className="title-description">
-                <p className="job">
-                  <b>Private project</b>
-                </p>
-                <p className="work-description">
-                  Inspired by Vercel's dashboard design.
-                </p>
-              </div>
-            </a>
-          </div>
-          <div className="big-box-wrapper section-1 animate-in">
             <a href="https://notech.vercel.app/" target="_blank">
-              <div className="big-box firstfloor">
+              <div className="small-box firstfloor">
                 <video
                   className="firstfloor-video"
                   autoPlay
@@ -71,10 +48,33 @@ export default function Home({}) {
                   <b>Jotion</b>
                 </p>
                 <p className="work-description">
-                  Notion clone, built with Next.js.
+                Notion clone, built with Next.js (from a tutorial).
                 </p>
               </div>
             </a>
+          </div>
+          <div className="big-box-wrapper section-1 animate-in">
+            <a href="https://retrac.co/" target="_blank">
+                <div className="big-box instagram">
+                  <video
+                    className="mindflow-resize"
+                    autoPlay
+                    muted
+                    loop
+                    playsInline
+                  >
+                    <source src="/videos/retrac.mp4" type="video/mp4" />
+                  </video>
+                </div>
+                <div className="title-description">
+                  <p className="job">
+                    <b>Retrac.co</b>
+                  </p>
+                  <p className="work-description">
+                  Inventory management software for businesses.
+                  </p>
+                </div>
+              </a>
           </div>
           <div className="row2">
             <div className="big-box-wrapper animate-in">
@@ -87,10 +87,7 @@ export default function Home({}) {
                     loop
                     playsInline
                   >
-                    <source
-                      src="/videos/mindflow.mp4"
-                      type="video/mp4"
-                    />
+                    <source src="/videos/mindflow.mp4" type="video/mp4" />
                   </video>
                 </div>
                 <div className="title-description">
@@ -98,7 +95,8 @@ export default function Home({}) {
                     <b>MindFlow</b>
                   </p>
                   <p className="work-description">
-                    I created a unique platform to clear your mind through raw, unfiltered writing.
+                    A unique platform to clear your mind through raw,
+                    unfiltered writing.
                   </p>
                 </div>
               </a>
@@ -121,7 +119,7 @@ export default function Home({}) {
                     <b>mbgaragedoorsllc.com</b>
                   </p>
                   <p className="work-description">
-                    Static website for a business.
+                    Website design for a business.
                   </p>
                 </div>
               </a>

@@ -458,23 +458,6 @@ h1 span {
   --themed-border: var(--themed-hover-bg, var(--ds-gray-200)) !important;
 }
 
-.emoji {
-  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
-  transition: text-shadow 0.2s ease-in-out, transform 0.2s ease-in-out;
-}
-
-.emoji:hover {
-  text-shadow: 0 10px 10px rgba(0, 0, 0, 0.3);
-}
-
-.emoji:before {
-  content: "✌️";
-}
-
-.emoji:hover:before {
-  content: "🇮🇱";
-}
-
 .contact-link:hover img:nth-child(1) {
   display: none;
 }
@@ -624,14 +607,11 @@ h1 span {
   position: relative;
   white-space: pre;
   width: auto;
-
-
 }
 .framer-pq1jwt,
 .framer-kclvnb {
   transition: 0.1s ease-in;
 }
-
 .framer-1y14nzt-container:hover .framer-pq1jwt {
   opacity: 0 !important;
   transform: rotate(40deg) !important;
@@ -641,4 +621,20 @@ h1 span {
   opacity: 1 !important;
   transform: none !important;
   transform-origin: 70% 70% !important;
+  /* animation: rotateAnimation 0.5s ease forwards; Adding rotation animation */
+}
+
+@keyframes rotateAnimation {
+  0% {
+    transform: rotate(0deg);
+  }
+  33% {
+    transform: rotate(5deg);
+  }
+  66% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }
