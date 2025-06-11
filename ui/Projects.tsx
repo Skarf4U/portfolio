@@ -5,7 +5,6 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 import Tilt from "react-parallax-tilt";
-import { RoughNotation } from "react-rough-notation";
 import { PostMeta } from "types/post";
 
 type Project = {
@@ -51,17 +50,9 @@ const Project = ({ project }: { project: Project }) => {
         </p>
         {project.url ? (
           <div className="mt-3">
-            <RoughNotation
-              type="underline"
-              show={isHovered}
-              strokeWidth={2}
-              iterations={2}
-              padding={2}
-              animationDuration={600}
-              color="#7DD3FC"
-            >
-              <span className="font-medium text-gray-800">View Project</span>
-            </RoughNotation>
+            <span className="font-medium text-gray-800 underline decoration-sky-300" style={{ textDecorationThickness: isHovered ? 2 : undefined }}>
+              View Project
+            </span>
           </div>
         ) : null}
       </div>

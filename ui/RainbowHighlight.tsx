@@ -1,5 +1,4 @@
 import React from "react"
-import { RoughNotation } from "react-rough-notation"
 
 export const RainbowHighlight = ({
   color,
@@ -12,15 +11,8 @@ export const RainbowHighlight = ({
   const animationDuration = Math.floor(30 * children.length)
 
   return (
-    <RoughNotation
-      type="highlight"
-      multiline={true}
-      padding={[0, 2]}
-      iterations={1}
-      animationDuration={animationDuration}
-      color={color}
-    >
+    <span style={{ backgroundColor: color, borderRadius: 2, padding: '0 2px' }}>
       {children}
-    </RoughNotation>
+    </span>
   )
 }

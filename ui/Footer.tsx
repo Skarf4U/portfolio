@@ -1,4 +1,3 @@
-import { RoughNotation } from "react-rough-notation";
 import cx from "clsx";
 import { FOCUS_VISIBLE_OUTLINE } from "@/lib/constants";
 

@@ -2,7 +2,6 @@
 import { Footer } from "@/ui/Footer";
 import { Navigation } from "@/ui/Navigation";
 import React, { useState } from "react";
-import { NextSeo } from "next-seo";
 
 export default function Contact() {
   const [loading, setLoading] = useState(false);
@@ -40,7 +39,6 @@ export default function Contact() {
 
   return (
     <>
-      <NextSeo title="Adi Amar - Contact" />
       <Navigation />
       <div
         style={{
