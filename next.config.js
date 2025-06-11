@@ -28,3 +28,5 @@ module.exports = {
     domains: ["api.microlink.io"],
   },
 }
+
+// Next.js 15+ requires Node.js >= 18.17.0

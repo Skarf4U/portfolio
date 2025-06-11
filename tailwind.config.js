@@ -9,6 +9,8 @@ module.exports = {
     "./ui/**/*.{js,ts,jsx,tsx}",
     "./lib/**/*.{js,ts}",
     "./posts/**/*.mdx",
+    "./app/**/*.{js,ts,jsx,tsx,mdx}",
+    "./components/**/*.{js,ts,jsx,tsx,mdx}",
 
     // Force tailwind jit to include css rules in compiled css. Specifically,
     // `.rough-notation` which is not in the above whitelisted files because it

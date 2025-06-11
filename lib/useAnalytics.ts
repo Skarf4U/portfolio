@@ -1,9 +1,9 @@
 import * as Fathom from "fathom-client"
-import { useRouter } from "next/router"
+import { usePathname } from "next/navigation"
 import { useEffect } from "react"
 
 export const useAnalytics = () => {
-  const router = useRouter()
+  const pathname = usePathname()
 
   useEffect(() => {
     if (process.env.NODE_ENV === "production") {
@@ -12,15 +12,11 @@ export const useAnalytics = () => {
         includedDomains: ["www.delbaoliveira.com"],
       })
     }
+  }, [])
 
-    function onRouteChangeComplete() {
+  useEffect(() => {
+    if (process.env.NODE_ENV === "production") {
       Fathom.trackPageview()
     }
-
-    router.events.on("routeChangeComplete", onRouteChangeComplete)
-
-    return () => {
-      router.events.off("routeChangeComplete", onRouteChangeComplete)
-    }
-  }, [router.events])
+  }, [pathname])
 }

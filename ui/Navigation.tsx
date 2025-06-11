@@ -1,7 +1,8 @@
+'use client';
 import Link from "next/link";
 import { FC, useState } from "react";
 import { Icon, IconName } from "./Icon";
-import { useRouter } from "next/router";
+import { usePathname } from "next/navigation";
 
 const navLinks: Array<{ label: string; url: string }> = [
   { label: "Contact", url: "/contact" },
@@ -22,8 +23,8 @@ const NavLink: FC<{
   icon?: IconName;
   url: string;
 }> = ({ label, hideLabel = false, icon, url }) => {
-  const router = useRouter();
-  const active = router.pathname.split("/")[1] == url.replace("/", "");
+  const pathname = usePathname();
+  const active = pathname.split("/")[1] == url.replace("/", "");
 
   return (
     <Link
@@ -45,8 +46,8 @@ const IconLink: FC<{
   icon?: IconName;
   url: string;
 }> = ({ label, hideLabel = false, icon, url }) => {
-  const router = useRouter();
-  const active = router.pathname.split("/")[1] == url.replace("/", "");
+  const pathname = usePathname();
+  const active = pathname.split("/")[1] == url.replace("/", "");
 
   return (
     <Link

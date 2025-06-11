@@ -1,11 +1,10 @@
+'use client';
 import { Footer } from "@/ui/Footer";
 import { Navigation } from "@/ui/Navigation";
 import React, { useState } from "react";
 import { NextSeo } from "next-seo";
 
-type Props = {};
-
-const contact = (props: Props) => {
+export default function Contact() {
   const [loading, setLoading] = useState(false);
   const [isSubmitted, setIsSubmitted] = useState(false);
 
@@ -18,7 +17,7 @@ const contact = (props: Props) => {
       note: String(e.target.note.value),
     };
 
-    const response = await fetch("api/contact", {
+    const response = await fetch("/api/contact", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
@@ -27,59 +26,51 @@ const contact = (props: Props) => {
     });
 
     if (response.ok) {
-      console.log("Message sent successfully");
       setLoading(false);
       setIsSubmitted(true);
-
       e.target.name.value = "";
       e.target.email.value = "";
       e.target.phone.value = "";
       e.target.note.value = "";
     }
     if (!response.ok) {
-      console.log("Error sending message");
       setLoading(false);
     }
   }
+
   return (
     <>
       <NextSeo title="Adi Amar - Contact" />
       <Navigation />
       <div
-        style={
-          {
-            "--contact-gradient-rotation": "-1.9124589006386765rad",
-          } as React.CSSProperties
-        }
+        style={{
+          "--contact-gradient-rotation": "-1.9124589006386765rad",
+        } as React.CSSProperties}
       >
-        {isSubmitted ? ( // Conditionally render the thank you message
+        {isSubmitted ? (
           <div
             className="stack_stack__iZkUS stack contact-sales_thankYou__OvJQU"
             data-version="v1"
-            style={
-              {
-                "--stack-flex": "initial",
-                "--stack-direction": "column",
-                "--stack-align": "stretch",
-                "--stack-justify": "flex-start",
-                "--stack-padding": "0px",
-                "--stack-gap": "0px",
-              } as React.CSSProperties
-            }
+            style={{
+              "--stack-flex": "initial",
+              "--stack-direction": "column",
+              "--stack-align": "stretch",
+              "--stack-justify": "flex-start",
+              "--stack-padding": "0px",
+              "--stack-gap": "0px",
+            } as React.CSSProperties}
           >
             <div
               className="stack_stack__iZkUS stack contact-sales_vercelLogo__ReEQX"
               data-version="v1"
-              style={
-                {
-                  "--stack-flex": "initial",
-                  "--stack-direction": "column",
-                  "--stack-align": "center",
-                  "--stack-justify": "flex-start",
-                  "--stack-padding": "0px",
-                  "--stack-gap": "0px",
-                } as React.CSSProperties
-              }
+              style={{
+                "--stack-flex": "initial",
+                "--stack-direction": "column",
+                "--stack-align": "center",
+                "--stack-justify": "flex-start",
+                "--stack-padding": "0px",
+                "--stack-gap": "0px",
+              } as React.CSSProperties}
             >
               <svg
                 aria-hidden="true"
@@ -91,10 +82,10 @@ const contact = (props: Props) => {
               >
                 <g filter="url(#filter0_d_124_3642)">
                   <path
-                    clip-rule="evenodd"
+                    clipRule="evenodd"
                     d="M128.416 64.0176L192.424 175.337H64.407L128.416 64.0176Z"
                     fill="white"
-                    fill-rule="evenodd"
+                    fillRule="evenodd"
                   ></path>
                 </g>
               </svg>
@@ -108,32 +99,28 @@ const contact = (props: Props) => {
             <p
               className="text_wrapper__i87JK"
               data-version="v1"
-              style={
-                {
-                  "--text-color": "var(--ds-gray-900)",
-                  "--text-size": "1.5rem",
-                  "--text-line-height": "1.5rem",
-                  "--text-letter-spacing": "-0.029375rem",
-                  "--text-weight": 400,
-                  "--text-align": "center",
-                } as React.CSSProperties
-              }
+              style={{
+                "--text-color": "var(--ds-gray-900)",
+                "--text-size": "1.5rem",
+                "--text-line-height": "1.5rem",
+                "--text-letter-spacing": "-0.029375rem",
+                "--text-weight": 400,
+                "--text-align": "center",
+              } as React.CSSProperties}
             >
               Thanks for getting in touch, I will reach out shortly.
             </p>
             <div
               className="stack_stack__iZkUS stack"
               data-version="v1"
-              style={
-                {
-                  "--stack-flex": "initial",
-                  "--stack-direction": "column",
-                  "--stack-align": "center",
-                  "--stack-justify": "flex-start",
-                  "--stack-padding": "0px",
-                  "--stack-gap": "0px",
-                } as React.CSSProperties
-              }
+              style={{
+                "--stack-flex": "initial",
+                "--stack-direction": "column",
+                "--stack-align": "center",
+                "--stack-justify": "flex-start",
+                "--stack-padding": "0px",
+                "--stack-gap": "0px",
+              } as React.CSSProperties}
             >
               <h1 className="home-link text-2xl font-extrabold pt-10">
                 <a href="/" className="flex flex-row items-center">
@@ -147,16 +134,14 @@ const contact = (props: Props) => {
           <div
             className="stack_stack__iZkUS stack contact-sales_contactContainer__huPZU contact-sales_dynamic__WV_k5"
             data-version="v1"
-            style={
-              {
-                "--stack-flex": "initial",
-                "--stack-direction": "column",
-                "--stack-align": "center",
-                "--stack-justify": "flex-start",
-                "--stack-padding": "0px",
-                "--stack-gap": "0px",
-              } as React.CSSProperties
-            }
+            style={{
+              "--stack-flex": "initial",
+              "--stack-direction": "column",
+              "--stack-align": "center",
+              "--stack-justify": "flex-start",
+              "--stack-padding": "0px",
+              "--stack-gap": "0px",
+            } as React.CSSProperties}
           >
             <h1
               className="contact-sales_contactSalesTitle__OKV_C"
@@ -170,32 +155,28 @@ const contact = (props: Props) => {
             <div
               className="stack_stack__iZkUS stack contact-sales_formAndSidebarContainer__YvVZQ"
               data-version="v1"
-              style={
-                {
-                  "--stack-flex": "initial",
-                  "--sm-stack-direction": "column",
-                  "--lg-stack-direction": "row",
-                  "--sm-stack-align": "center",
-                  "--lg-stack-align": "baseline",
-                  "--stack-justify": "center",
-                  "--stack-padding": "0px",
-                  "--stack-gap": "32px",
-                } as React.CSSProperties
-              }
+              style={{
+                "--stack-flex": "initial",
+                "--sm-stack-direction": "column",
+                "--lg-stack-direction": "row",
+                "--sm-stack-align": "center",
+                "--lg-stack-align": "baseline",
+                "--stack-justify": "center",
+                "--stack-padding": "0px",
+                "--stack-gap": "32px",
+              } as React.CSSProperties}
             >
               <div
                 className="stack_stack__iZkUS stack contact-sales_formContainer__AzR8V"
                 data-version="v1"
-                style={
-                  {
-                    "--stack-flex": "initial",
-                    "--stack-direction": "column",
-                    "--stack-align": "center",
-                    "--stack-justify": "flex-start",
-                    "--stack-padding": "0px",
-                    "--stack-gap": "0px",
-                  } as React.CSSProperties
-                }
+                style={{
+                  "--stack-flex": "initial",
+                  "--stack-direction": "column",
+                  "--stack-align": "center",
+                  "--stack-justify": "flex-start",
+                  "--stack-padding": "0px",
+                  "--stack-gap": "0px",
+                } as React.CSSProperties}
               >
                 <form
                   className="contact-sales_form__hEJyG"
@@ -204,8 +185,21 @@ const contact = (props: Props) => {
                   <div
                     className="stack_stack__iZkUS stack"
                     data-version="v1"
-                    style={
-                      {
+                    style={{
+                      "--stack-flex": "initial",
+                      "--stack-direction": "column",
+                      "--stack-align": "stretch",
+                      "--stack-justify": "flex-start",
+                      "--stack-padding": "0px",
+                      "--sm-stack-gap": "16px",
+                      "--md-stack-gap": "28px",
+                      "--lg-stack-gap": "28px",
+                    } as React.CSSProperties}
+                  >
+                    <div
+                      className="stack_stack__iZkUS stack"
+                      data-version="v1"
+                      style={{
                         "--stack-flex": "initial",
                         "--stack-direction": "column",
                         "--stack-align": "stretch",
@@ -214,24 +208,7 @@ const contact = (props: Props) => {
                         "--sm-stack-gap": "16px",
                         "--md-stack-gap": "28px",
                         "--lg-stack-gap": "28px",
-                      } as React.CSSProperties
-                    }
-                  >
-                    <div
-                      className="stack_stack__iZkUS stack"
-                      data-version="v1"
-                      style={
-                        {
-                          "--stack-flex": "initial",
-                          "--stack-direction": "column",
-                          "--stack-align": "stretch",
-                          "--stack-justify": "flex-start",
-                          "--stack-padding": "0px",
-                          "--sm-stack-gap": "16px",
-                          "--md-stack-gap": "28px",
-                          "--lg-stack-gap": "28px",
-                        } as React.CSSProperties
-                      }
+                      } as React.CSSProperties}
                     >
                       <label
                         data-version="v1"
@@ -245,12 +222,10 @@ const contact = (props: Props) => {
                           className="input_container__eoK_W"
                           data-geist-input-wrapper=""
                           data-version="v1"
-                          style={
-                            {
-                              width: "100%",
-                              "--geist-icon-size": "16px",
-                            } as React.CSSProperties
-                          }
+                          style={{
+                            width: "100%",
+                            "--geist-icon-size": "16px",
+                          } as React.CSSProperties}
                         >
                           <input
                             id="name"
@@ -268,18 +243,16 @@ const contact = (props: Props) => {
                     <div
                       className="stack_stack__iZkUS stack"
                       data-version="v1"
-                      style={
-                        {
-                          "--stack-flex": "initial",
-                          "--stack-direction": "column",
-                          "--stack-align": "stretch",
-                          "--stack-justify": "flex-start",
-                          "--stack-padding": "0px",
-                          "--sm-stack-gap": "16px",
-                          "--md-stack-gap": "28px",
-                          "--lg-stack-gap": "28px",
-                        } as React.CSSProperties
-                      }
+                      style={{
+                        "--stack-flex": "initial",
+                        "--stack-direction": "column",
+                        "--stack-align": "stretch",
+                        "--stack-justify": "flex-start",
+                        "--stack-padding": "0px",
+                        "--sm-stack-gap": "16px",
+                        "--md-stack-gap": "28px",
+                        "--lg-stack-gap": "28px",
+                      } as React.CSSProperties}
                     >
                       <label
                         data-version="v1"
@@ -293,12 +266,10 @@ const contact = (props: Props) => {
                           className="input_container__eoK_W"
                           data-geist-input-wrapper=""
                           data-version="v1"
-                          style={
-                            {
-                              width: "100%",
-                              "--geist-icon-size": "16px",
-                            } as React.CSSProperties
-                          }
+                          style={{
+                            width: "100%",
+                            "--geist-icon-size": "16px",
+                          } as React.CSSProperties}
                         >
                           <input
                             id="email"
@@ -316,18 +287,16 @@ const contact = (props: Props) => {
                     <div
                       className="stack_stack__iZkUS stack"
                       data-version="v1"
-                      style={
-                        {
-                          "--stack-flex": "initial",
-                          "--stack-direction": "column",
-                          "--stack-align": "stretch",
-                          "--stack-justify": "flex-start",
-                          "--stack-padding": "0px",
-                          "--sm-stack-gap": "16px",
-                          "--md-stack-gap": "28px",
-                          "--lg-stack-gap": "28px",
-                        } as React.CSSProperties
-                      }
+                      style={{
+                        "--stack-flex": "initial",
+                        "--stack-direction": "column",
+                        "--stack-align": "stretch",
+                        "--stack-justify": "flex-start",
+                        "--stack-padding": "0px",
+                        "--sm-stack-gap": "16px",
+                        "--md-stack-gap": "28px",
+                        "--lg-stack-gap": "28px",
+                      } as React.CSSProperties}
                     >
                       <label
                         data-version="v1"
@@ -341,12 +310,10 @@ const contact = (props: Props) => {
                           className="input_container__eoK_W"
                           data-geist-input-wrapper=""
                           data-version="v1"
-                          style={
-                            {
-                              width: "100%",
-                              "--geist-icon-size": "16px",
-                            } as React.CSSProperties
-                          }
+                          style={{
+                            width: "100%",
+                            "--geist-icon-size": "16px",
+                          } as React.CSSProperties}
                         >
                           <input
                             id="phone"
@@ -364,16 +331,14 @@ const contact = (props: Props) => {
                     <div
                       className="stack_stack__iZkUS stack"
                       data-version="v1"
-                      style={
-                        {
-                          "--stack-flex": "initial",
-                          "--stack-direction": "column",
-                          "--stack-align": "stretch",
-                          "--stack-justify": "flex-start",
-                          "--stack-padding": "0px",
-                          "--stack-gap": "0px",
-                        } as React.CSSProperties
-                      }
+                      style={{
+                        "--stack-flex": "initial",
+                        "--stack-direction": "column",
+                        "--stack-align": "stretch",
+                        "--stack-justify": "flex-start",
+                        "--stack-padding": "0px",
+                        "--stack-gap": "0px",
+                      } as React.CSSProperties}
                     >
                       <label data-version="v1">
                         <div className="label_label__tW6NP label_input__5eDQ5 label_capitalize__mJBX4">
@@ -395,17 +360,15 @@ const contact = (props: Props) => {
                     <div
                       className="stack_stack__iZkUS stack"
                       data-version="v1"
-                      style={
-                        {
-                          "--stack-flex": "initial",
-                          "--stack-direction": "column",
-                          "--sm-stack-align": "center",
-                          "--md-stack-align": "end",
-                          "--stack-justify": "flex-start",
-                          "--stack-padding": "0px",
-                          "--stack-gap": "0px",
-                        } as React.CSSProperties
-                      }
+                      style={{
+                        "--stack-flex": "initial",
+                        "--stack-direction": "column",
+                        "--sm-stack-align": "center",
+                        "--md-stack-align": "end",
+                        "--stack-justify": "flex-start",
+                        "--stack-padding": "0px",
+                        "--stack-gap": "0px",
+                      } as React.CSSProperties}
                     >
                       <button
                         type="submit"
@@ -413,13 +376,11 @@ const contact = (props: Props) => {
                         className="button_base__BjwbK reset_reset__KRyvc button_button__81573 reset_reset__KRyvc button_invert__YNhnn disabled:bg-gray-400 disabled:text-gray-100"
                         data-geist-button=""
                         disabled={loading}
-                        style={
-                          {
-                            minWidth: "164px",
-                            maxWidth: "164px",
-                            "--geist-icon-size": "16px",
-                          } as React.CSSProperties
-                        }
+                        style={{
+                          minWidth: "164px",
+                          maxWidth: "164px",
+                          "--geist-icon-size": "16px",
+                        } as React.CSSProperties}
                       >
                         <span className="button_content__1aE1_ ">Submit</span>
                       </button>
@@ -430,44 +391,38 @@ const contact = (props: Props) => {
               <div
                 className="stack_stack__iZkUS stack contact-sales_sidebar__8_C2O"
                 data-version="v1"
-                style={
-                  {
-                    "--stack-flex": "initial",
-                    "--stack-direction": "column",
-                    "--stack-align": "center",
-                    "--stack-justify": "flex-start",
-                    "--stack-padding": "0px",
-                    "--stack-gap": "56px",
-                  } as React.CSSProperties
-                }
+                style={{
+                  "--stack-flex": "initial",
+                  "--stack-direction": "column",
+                  "--stack-align": "center",
+                  "--stack-justify": "flex-start",
+                  "--stack-padding": "0px",
+                  "--stack-gap": "56px",
+                } as React.CSSProperties}
               >
                 <figure
                   className="stack_stack__iZkUS stack contact-sales_quote__xNVW_"
                   data-version="v1"
-                  style={
-                    {
-                      "--stack-flex": "initial",
-                      "--stack-direction": "column",
-                      "--stack-align": "stretch",
-                      "--stack-justify": "flex-start",
-                      "--stack-padding": "0px",
-                      "--stack-gap": "0px",
-                    } as React.CSSProperties
-                  }
+                  style={{
+                    "--stack-flex": "initial",
+                    "--stack-direction": "column",
+                    "--stack-align": "stretch",
+                    "--stack-justify": "flex-start",
+                    "--stack-padding": "0px",
+                    "--stack-gap": "0px",
+                  } as React.CSSProperties}
                 >
                   <blockquote className="text_blockquote__L8WOL">
                     <p
                       className="text_wrapper__i87JK"
                       data-version="v1"
-                      style={
-                        {
-                          "--text-color": "var(--ds-gray-1000)",
-                          "--text-size": "1.5rem",
-                          "--text-line-height": "2rem",
-                          "--text-letter-spacing": "-0.029375rem",
-                          "--text-weight": 400,
-                        } as React.CSSProperties
-                      }
+                      style={{
+                        "--text-color": "var(--ds-gray-1000)",
+                        "--text-size": "1.5rem",
+                        "--text-line-height": "2rem",
+                        "--text-letter-spacing": "-0.029375rem",
+                        "--text-weight": 400,
+                      } as React.CSSProperties}
                     >
                       Every great project begins with a simple hello <span className="wave mr-2">👋</span>. Let's
                       start building something amazing together.
@@ -477,30 +432,26 @@ const contact = (props: Props) => {
                 <div
                   className="stack_stack__iZkUS stack contact-sales_testimonials__Kh43G"
                   data-version="v1"
-                  style={
-                    {
+                  style={{
+                    "--stack-flex": "initial",
+                    "--stack-direction": "column",
+                    "--stack-align": "stretch",
+                    "--stack-justify": "flex-start",
+                    "--stack-padding": "0px",
+                    "--stack-gap": "0px",
+                  } as React.CSSProperties}
+                >
+                  <div
+                    className="stack_stack__iZkUS stack carousel_logo-carousel__g1_fJ"
+                    data-version="v1"
+                    style={{
                       "--stack-flex": "initial",
                       "--stack-direction": "column",
                       "--stack-align": "stretch",
                       "--stack-justify": "flex-start",
                       "--stack-padding": "0px",
                       "--stack-gap": "0px",
-                    } as React.CSSProperties
-                  }
-                >
-                  <div
-                    className="stack_stack__iZkUS stack carousel_logo-carousel__g1_fJ"
-                    data-version="v1"
-                    style={
-                      {
-                        "--stack-flex": "initial",
-                        "--stack-direction": "column",
-                        "--stack-align": "stretch",
-                        "--stack-justify": "flex-start",
-                        "--stack-padding": "0px",
-                        "--stack-gap": "0px",
-                      } as React.CSSProperties
-                    }
+                    } as React.CSSProperties}
                   ></div>
                 </div>
               </div>
@@ -510,6 +461,4 @@ const contact = (props: Props) => {
       </div>
     </>
   );
-};
-
-export default contact;
+} 

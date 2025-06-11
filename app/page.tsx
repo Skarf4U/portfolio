@@ -1,28 +1,8 @@
 import { About } from "@/ui/About";
 import { Layout } from "@/ui/Layout";
-import { MediaPreview } from "@/ui/MediaPreview";
-import { PostPreview } from "@/ui/PostPreview";
-import { InferGetStaticPropsType } from "next";
 import React from "react";
 
-const projects = [
-  {
-    name: "QuizWiz",
-    image: "/projects/quizwiz.png",
-    url: "https://quizwizai.vercel.app/",
-    description:
-      "The story of how I dropped out of medical school, left home at 18, and eventually learned how to code. It spans 3 countries and a decade, it's been a long journey with a few detours, but I eventually found my career path.",
-  },
-  {
-    name: "How I Built the Portfolio That Landed Me a Dev Role (Tech Stack Explained)",
-    image: "/projects/zl9iXZrw_dw.png",
-    url: "https://www.youtube.com/watch?v=zl9iXZrw_dw",
-    description:
-      "In this video, I go through how I built the website/portfolio that helped me land my first developer role at one of my dream companies.",
-  },
-];
-
-export default function Home({}) {
+export default function Home() {
   return (
     <Layout>
       <div className="space-y-14 lg:space-y-24">
@@ -48,33 +28,33 @@ export default function Home({}) {
                   <b>Jotion</b>
                 </p>
                 <p className="work-description">
-                Notion clone, built with Next.js (from a tutorial).
+                  Notion clone, built with Next.js (from a tutorial).
                 </p>
               </div>
             </a>
           </div>
           <div className="big-box-wrapper section-1 animate-in">
             <a href="https://retrac.co/" target="_blank">
-                <div className="big-box instagram">
-                  <video
-                    className="mindflow-resize"
-                    autoPlay
-                    muted
-                    loop
-                    playsInline
-                  >
-                    <source src="/videos/retrac.mp4" type="video/mp4" />
-                  </video>
-                </div>
-                <div className="title-description">
-                  <p className="job">
-                    <b>Retrac.co</b>
-                  </p>
-                  <p className="work-description">
+              <div className="big-box instagram">
+                <video
+                  className="mindflow-resize"
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                >
+                  <source src="/videos/retrac.mp4" type="video/mp4" />
+                </video>
+              </div>
+              <div className="title-description">
+                <p className="job">
+                  <b>Retrac.co</b>
+                </p>
+                <p className="work-description">
                   Inventory management software for businesses.
-                  </p>
-                </div>
-              </a>
+                </p>
+              </div>
+            </a>
           </div>
           <div className="row2">
             <div className="big-box-wrapper animate-in">
@@ -140,4 +120,4 @@ export default function Home({}) {
       </div>
     </Layout>
   );
-}
+} 

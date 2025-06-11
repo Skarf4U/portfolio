@@ -1,7 +1,7 @@
 import nodemailer from "nodemailer";
 
-export default async function ContactAPI(req, res) {
-  const { name, email, phone, note } = req.body;
+export async function POST(request) {
+  const { name, email, phone, note } = await request.json();
 
   const user = process.env.user;
   const transporter = nodemailer.createTransport({
@@ -29,14 +29,9 @@ export default async function ContactAPI(req, res) {
     });
 
     console.log("Message sent: " + mail.messageId);
-
-    return res.status(200).json({ message: "success" });
+    return new Response(JSON.stringify({ message: "success" }), { status: 200, headers: { 'Content-Type': 'application/json' } });
   } catch (error) {
     console.log(error);
-    res
-      .status(500)
-      .json({ message: "Could not send the email. Message wasn't sent." });
+    return new Response(JSON.stringify({ message: "Could not send the email. Message wasn't sent." }), { status: 500, headers: { 'Content-Type': 'application/json' } });
   }
-
-  return res.status(200).json({ message: "success" });
-}
+} 

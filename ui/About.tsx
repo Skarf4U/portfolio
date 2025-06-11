@@ -1,3 +1,4 @@
+'use client';
 import { LIGHT_COLORS } from "@/lib/constants";
 import { shuffleArray } from "@/lib/shuffleArray";
 import { useIsFontReady } from "@/lib/useIsFontReady";
